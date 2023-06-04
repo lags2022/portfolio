@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 interface AnimatedProps {
   children: string;
+  className?: string;
 }
 
 const motionWords = {
@@ -22,7 +23,7 @@ const motionWords = {
 const motionWord = {
   initial: {
     opacity: 0,
-    y: 50,
+    y: 20,
   },
   animate: {
     opacity: 1,
@@ -33,20 +34,20 @@ const motionWord = {
   },
 };
 
-const Animated: React.FC<AnimatedProps> = ({ children }) => {
+const Animated: React.FC<AnimatedProps> = ({ children, className }) => {
   return (
-      <motion.h1
-        className="text-5xl font-bold inline-block"
-        variants={motionWords}
-        initial="initial"
-        animate="animate"
-      >
-        {children?.split(" ").map((word, i) => (
-          <motion.span className="inline-block" key={i} variants={motionWord}>
-            {word}&nbsp;
-          </motion.span>
-        ))}
-      </motion.h1>
+    <motion.h1
+      className={className}
+      variants={motionWords}
+      initial="initial"
+      animate="animate"
+    >
+      {children?.split(" ").map((word, i) => (
+        <motion.span className="inline-block" key={i} variants={motionWord}>
+          {word}&nbsp;
+        </motion.span>
+      ))}
+    </motion.h1>
   );
 };
 

@@ -13,11 +13,11 @@ export default function Home() {
         priority={true}
       />
       <div className="flex flex-col gap-2">
-        <Animated>Turning vision into reality with code and design.</Animated>
+        <Animated className="text-5xl font-bold inline-block pb-3">Turning vision into reality with code and design.</Animated>
         <p>
           As a skilled full-stack developer, I am dedicated to turning ideas
-          into innovative web applications. Explore my latest projects and
-          articles, showcasing my expertise in React.js and web development.
+          into innovative web applications. Explore my latest projects
+          showcasing my expertise in React.js and web development.
         </p>
       </div>
     </div>
