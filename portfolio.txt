@@ -1,0 +1,35 @@
+//biografia: español
+
+Hola, soy Luis Guzmán, un desarrollador web apasionado tengo 1 año de experiencia como desarrollador web. Algunos de mis logros más importantes incluyen el desarrollo de un clon de Amazon, un clon de Messenger y varios sitios de comercio electrónico para clientes.
+
+Mi conjunto de habilidades incluye HTML, CSS y diferentes frameworks y librerías de JavaScript, como NextJS, React y React Native. Me mantengo actualizado con los últimos estándares web y tendencias de diseño a través de la lectura de publicaciones de la industria y la experimentación con nuevas tecnologías.
+Mi objetivo de carrera es conseguir un trabajo en el sector de la tecnología para impulsar mi desarrollo profesional. Me gusta trabajar en un ambiente ágil y colaborativo donde pueda resolver problemas complejos. Busco un rol que me permita aplicar mis habilidades de desarrollo web a proyectos ambiciosos e innovadores.
+
+Estoy emocionado de tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto. ¡Gracias por visitar mi portfolio!
+
+//ingles:
+
+Hello, I'm Luis Guzmán, a passionate web developer with 1 year of experience in web development. Some of my most significant achievements include developing a clone of Amazon, a clone of Messenger, and several e-commerce sites for clients.
+My skill set includes HTML, CSS, and various JavaScript frameworks and libraries, such as NextJS, React, and React Native. I stay up-to-date with the latest web standards and design trends through reading industry publications and experimenting with new technologies.
+My career goal is to secure a job in the technology sector to drive my professional development. I enjoy working in an agile and collaborative environment where I can solve complex problems. I'm looking for a role that allows me to apply my web development skills to ambitious and innovative projects.
+Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I'm passionate about creating beautiful, functional, and user-centered digital experiences.
+I'm excited to have the opportunity to contribute my skills and passion to your next project. Thank you for visiting my portfolio!
+
+//educacion: español
+Education
+Full Stack Developer
+2023 | Henry Bootcamp, Buenos Aires, Argentina.
+800 horas de cursado teórico-práctico.
+
+Systems Engineering
+2020-2022 | Continental University, campus Lima, Peru.
+Second year in Systems Engineering.
+
+
+//projects:
+Imagination has no limits
+
+api ricky morty
+Messenger
+amazon clone
+amazon clone react Native
