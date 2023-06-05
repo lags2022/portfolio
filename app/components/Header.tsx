@@ -78,8 +78,8 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 px-10 fixed top-0 w-screen bg-light/80 backdrop-blur-sm backdrop-saturate-200 z-50 transition-all duration-300 ease-in ">
-      <div className="flex items-center justify-between w-full max-w-screen-xl m-auto">
+    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-50 transition-all duration-300 ease-in">
+      <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
         <Link href="#" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
             <FaLaptopCode className="text-blue-600" size={30} />

@@ -43,7 +43,13 @@ const Animated: React.FC<AnimatedProps> = ({ children, className }) => {
       animate="animate"
     >
       {children?.split(" ").map((word, i) => (
-        <motion.span className="inline-block" key={i} variants={motionWord}>
+        <motion.span
+          className="inline-block"
+          key={i}
+          variants={motionWord}
+          initial="initial"
+          animate="animate"
+        >
           {word}&nbsp;
         </motion.span>
       ))}

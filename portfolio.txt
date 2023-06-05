@@ -3,7 +3,7 @@
 Hola, soy Luis Guzmán, un desarrollador web apasionado tengo 1 año de experiencia como desarrollador web. Algunos de mis logros más importantes incluyen el desarrollo de un clon de Amazon, un clon de Messenger y varios sitios de comercio electrónico para clientes.
 
 Mi conjunto de habilidades incluye HTML, CSS y diferentes frameworks y librerías de JavaScript, como NextJS, React y React Native. Me mantengo actualizado con los últimos estándares web y tendencias de diseño a través de la lectura de publicaciones de la industria y la experimentación con nuevas tecnologías.
-Mi objetivo de carrera es conseguir un trabajo en el sector de la tecnología para impulsar mi desarrollo profesional. Me gusta trabajar en un ambiente ágil y colaborativo donde pueda resolver problemas complejos. Busco un rol que me permita aplicar mis habilidades de desarrollo web a proyectos ambiciosos e innovadores.
+//Mi objetivo de carrera es conseguir un trabajo en el sector de la tecnología para impulsar mi desarrollo profesional. Me gusta trabajar en un ambiente ágil y colaborativo donde pueda resolver problemas complejos. Busco un rol que me permita aplicar mis habilidades de desarrollo web a proyectos ambiciosos e innovadores.
 
 Estoy emocionado de tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto. ¡Gracias por visitar mi portfolio!
 

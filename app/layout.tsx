@@ -6,13 +6,13 @@ import { Inter, Montserrat } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  // variable: "--font-inter",
 });
 
 const mont = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-mont",
+  // variable: "--font-mont",
 });
 
 export const metadata = {
@@ -26,14 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mont.variable} font-mont `}>
-      <body className="bg-light">
+    <html lang="en" className={`${mont.className} ${inter.className}`}>
+      <body className="bg-light scroll-smooth">
         <Header />
-        <main className="pt-[72px]">{children}</main>
+        <main className="pt-[72px] w-[80vw] m-auto">{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-
-//w-full min-h-screen
