@@ -13,9 +13,7 @@ const About = () => {
       <div className="w-full grid my-6 gap-8 grid-cols-9 justify-center items-center [&>img]:self-start">
         <div className="[&>p]:font-medium [&>p]:my-2 col-span-3">
           <h2 className="font-bold text-lg text-blue-600">BIOGRAPHY</h2>
-          <p>
-            Hi a passionate web developer with 1 year of experience in web
-          </p>
+          <p>Hi a passionate web developer with 1 year of experience in web</p>
         </div>
         <Image
           className="col-span-4 rounded-2xl drop-shadow-xl border-solid border-4 border-blue-300 m-auto mt-0"
