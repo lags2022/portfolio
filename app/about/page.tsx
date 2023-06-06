@@ -2,6 +2,7 @@ import Image from "next/image";
 import Animated from "../components/Animated";
 import Counter from "../components/Counter";
 import Skills from "./componets/Skills";
+import Experience from "./componets/Experience";
 
 const About = () => {
   return (
@@ -53,6 +54,7 @@ const About = () => {
         </div>
       </div>
       <Skills />
+      <Experience />
     </main>
   );
 };

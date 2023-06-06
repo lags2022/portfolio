@@ -3,16 +3,9 @@ import Header from "./components/Header";
 import "./globals.css";
 import { Inter, Montserrat } from "next/font/google";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  // variable: "--font-inter",
-});
-
 const mont = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  // variable: "--font-mont",
 });
 
 export const metadata = {
@@ -26,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mont.className} ${inter.className}`}>
+    <html lang="en" className={`${mont.className}`}>
       <body className="bg-light scroll-smooth">
         <Header />
         <main className="pt-[72px] w-[80vw] m-auto">{children}</main>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 interface AnimatedProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }
 
@@ -14,22 +14,8 @@ const motionWords = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.5,
+      delay: 0.3,
       staggerChildren: 0.08,
-    },
-  },
-};
-
-const motionWord = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
     },
   },
 };
@@ -42,17 +28,7 @@ const Animated: React.FC<AnimatedProps> = ({ children, className }) => {
       initial="initial"
       animate="animate"
     >
-      {children?.split(" ").map((word, i) => (
-        <motion.span
-          className="inline-block"
-          key={i}
-          variants={motionWord}
-          initial="initial"
-          animate="animate"
-        >
-          {word}&nbsp;
-        </motion.span>
-      ))}
+      {children}
     </motion.h1>
   );
 };

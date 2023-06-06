@@ -96,7 +96,7 @@ const arraySkills = [
 const Skills = () => {
   return (
     <>
-      <h2 className="w-full my-6 text-6xl font-bold text-center">Skills</h2>
+      <h2 className="w-full my-16 text-6xl font-bold text-center">Skills</h2>
       <div className="w-full h-screen flex items-center justify-center rounded-full bg-circularLight relative">
         {arraySkills.map((skill) => (
           <Skill key={skill.name} name={skill.name} x={skill.x} y={skill.y} />

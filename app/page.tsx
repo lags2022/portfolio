@@ -1,24 +1,16 @@
 "use client";
 
-import Image from "next/image";
-import Animated from "../components/Animated";
+import Animated from "./components/Animated";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
+import HeroSvg from "./components/HeroSvg";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full max-w-screen-lg m-auto px-4">
-      <Image
-        className="hidden md:block m-auto"
-        src="/images/profile/developer-pic-1.webp"
-        width={569}
-        height={569}
-        alt="Hero"
-        priority={true}
-      />
+    <div className="grid gap-2 grid-cols-1 md:grid-cols-2 items-center justify-center w-full max-w-screen-lg m-auto px-4">
       <div className="flex flex-col gap-2">
         <Animated className="text-5xl font-bold inline-block pb-3">
-          Turning vision into reality with code and design.
+          Full Stack Web Developer
         </Animated>
         <p className="font-medium">
           As a skilled full-stack developer, I am dedicated to turning ideas
@@ -33,6 +25,9 @@ export default function Home() {
           <p className="text-sm font-semibold">Resume CV</p>
           <HiOutlineExternalLink size={20} />
         </motion.button>
+      </div>
+      <div className="w-4/6 m-auto py-2">
+        <HeroSvg />
       </div>
     </div>
   );
