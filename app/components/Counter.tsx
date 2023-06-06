@@ -15,7 +15,8 @@ const Counter: React.FC<CounterProps> = ({ value, children }) => {
   const springValue = useSpring(motionValue, {
     duration: 1000,
   });
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
+  //el once es para que anime solo una vez cuando la pagina esta cargada.
 
   useEffect(() => {
     if (isInView) motionValue.set(value);
@@ -23,7 +24,6 @@ const Counter: React.FC<CounterProps> = ({ value, children }) => {
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-      console.log(latest);
       if (ref.current && latest.toFixed(0) <= value)
         ref.current.textContent = latest.toFixed(0);
     });
