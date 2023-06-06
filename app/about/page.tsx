@@ -14,29 +14,7 @@ const About = () => {
         <div className="[&>p]:font-medium [&>p]:my-2 col-span-3">
           <h2 className="font-bold text-lg text-blue-600">BIOGRAPHY</h2>
           <p>
-            Hi, I'm <span className="font-bold">Luis Guzmán</span>, a passionate
-            web developer with 1 year of experience in web development. My skill
-            set includes HTML, CSS, and various JavaScript frameworks and
-            libraries, such as NextJS, React, and React Native. I stay
-            up-to-date with the latest web standards.
-          </p>
-          {/* Some of
-            my most significant achievements include developing a clone of
-            Amazon, a clone of Messenger, and several e-commerce sites for
-            clients. */}
-          {/* <p>
-            My career goal is to secure a job in the technology sector to drive
-            my professional development. I enjoy working in an agile and
-            collaborative environment where I can solve complex problems. I'm
-            looking for a role that allows me to apply my web development skills
-            to ambitious and innovative projects.
-          </p> */}
-          <p>
-            Whether I'm working on a website or mobile app, I bring my
-            commitment to design excellence and user-centered thinking to every
-            project I work on. I'm excited to have the opportunity to contribute
-            my skills and passion to your next project. Thank you for visiting
-            my portfolio!
+            Hi a passionate web developer with 1 year of experience in web
           </p>
         </div>
         <Image

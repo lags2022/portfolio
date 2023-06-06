@@ -20,7 +20,7 @@ const Counter: React.FC<CounterProps> = ({ value, children }) => {
 
   useEffect(() => {
     if (isInView) motionValue.set(value);
-  }, [isInView, value]);
+  }, [isInView, value, motionValue]);
 
   useEffect(() => {
     springValue.on("change", (latest) => {
