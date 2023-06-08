@@ -12,15 +12,15 @@ const links = [
     label: "Home",
   },
   {
-    route: "/about",
+    route: "#about",
     label: "About",
   },
   {
-    route: "/projects",
+    route: "#projects",
     label: "Projects",
   },
   {
-    route: "/contact",
+    route: "#contact",
     label: "Contact",
   },
 ];
@@ -80,11 +80,11 @@ const Header: React.FC = () => {
   return (
     <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-50 transition-all duration-300 ease-in">
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
-        <Link href="#" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
-            <FaLaptopCode className="text-blue-600" size={30} />
+            <FaLaptopCode className="text-blue-600" size={40} />
           </motion.div>
-          <h3 className="px-2 text-blue-700 font-bold text-xl">Lgdev</h3>
+          <h3 className="px-2 text-blue-700 font-bold text-2xl">Lgdev</h3>
         </Link>
         <nav className="flex items-center">
           <ul className="flex [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-semibold">

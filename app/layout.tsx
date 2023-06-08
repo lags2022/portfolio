@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 const mont = Montserrat({
   subsets: ["latin"],
@@ -20,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${mont.className}`}>
-      <body className="bg-light scroll-smooth">
+      <body className="bg-light">
         <Header />
-        <main className="pt-[72px] w-[80vw] m-auto">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
