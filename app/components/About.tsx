@@ -11,10 +11,10 @@ const About = () => {
         <Image
           className="rounded-2xl my-6 drop-shadow-xl m-auto"
           src="/images/profile/developer-pic-2.webp"
-          priority={true}
           width={200}
-          height={200}
+          height={250}
           alt="Biography"
+          loading="lazy"
         />
         <p className="font-medium text-sm md:text-base text-center px-10">
           My name is{" "}

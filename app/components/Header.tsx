@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLaptopCode } from "react-icons/fa";
 import { useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const links = [
   {
@@ -54,6 +54,7 @@ const RenderSvgs = ({ name }: { name: nameSvg }) => {
 };
 
 const Header: React.FC = () => {
+  const { scrollYProgress } = useScroll();
   const menu = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = (evt: React.MouseEvent<HTMLLIElement>) => {
@@ -78,7 +79,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-50 transition-all duration-300 ease-in">
+    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-20 transition-all duration-300 ease-in">
+      <motion.div
+        className="bg-gray-600 fixed left-0 right-0 bottom-0 h-1.5 origin-[0%]"
+        style={{ scaleX: scrollYProgress }}
+      />
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>

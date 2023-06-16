@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="bg-light">
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
