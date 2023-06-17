@@ -5,6 +5,12 @@ import * as Yup from "yup";
 import { Toaster } from "react-hot-toast";
 import { ContactProps } from "../../types";
 import { sendEmailValue } from "../services/sendEmail";
+import dynamic from "next/dynamic";
+
+const GlobeThree = dynamic(() => import("./GlobeThree"), {
+  loading: () => <p>Loading...</p>,
+  ssr: false, // Deshabilita la renderización del lado del servidor
+});
 
 interface StateContactProps {
   values: ContactProps;
@@ -42,7 +48,7 @@ const Contact = () => {
     <div id="contact" className="w-full space-y-6">
       <h2 className="mt-20 text-center font-bold text-3xl">Contact me</h2>
       <div className="flex gap-6">
-        <img src="/images/details/got.webp" alt="Imgcontact" />
+        <GlobeThree />
         <Formik
           initialValues={INITIAL_VALUES}
           onSubmit={handleSubmit}
