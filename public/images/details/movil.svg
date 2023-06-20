@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 916 530">
-  <path fill="#000" fill-rule="evenodd" d="M61 211c-34-20-34-51 0-70L260 25c24-13 63-13 87 0l508 294c34 19 34 51 0 70L647 509a77 77 0 0 1-69 0L61 211Z" clip-rule="evenodd"/>
+  <path fill="#000" fillRule="evenodd" d="M61 211c-34-20-34-51 0-70L260 25c24-13 63-13 87 0l508 294c34 19 34 51 0 70L647 509a77 77 0 0 1-69 0L61 211Z" clipRule="evenodd"/>
   <g filter="url(#a)">
-    <path fill="#D9D9D9" fill-rule="evenodd" d="M54 199c-26-15-26-40 0-55L261 25c24-14 63-14 86 0l515 299c26 16 26 40 0 55L649 502a77 77 0 0 1-70 0L54 199Z" clip-rule="evenodd"/>
+    <path fill="#D9D9D9" fillRule="evenodd" d="M54 199c-26-15-26-40 0-55L261 25c24-14 63-14 86 0l515 299c26 16 26 40 0 55L649 502a77 77 0 0 1-70 0L54 199Z" clipRule="evenodd"/>
   </g>
-  <path fill="url(#b)" fill-rule="evenodd" d="M63 196c-26-16-26-40 0-55L261 26c24-14 63-14 87 0l506 292c26 15 26 40 0 55L647 493a77 77 0 0 1-69 0L63 196Z" clip-rule="evenodd" style="mix-blend-mode:multiply"/>
+  <path fill="url(#b)" fillRule="evenodd" d="M63 196c-26-16-26-40 0-55L261 26c24-14 63-14 87 0l506 292c26 15 26 40 0 55L647 493a77 77 0 0 1-69 0L63 196Z" clipRule="evenodd" style="mix-blend-mode:multiply"/>
   <mask id="d" width="800" height="462" x="59" y="22" mask-type="alpha" maskUnits="userSpaceOnUse">
-    <path fill="#fff" fill-rule="evenodd" d="M74 184c-19-11-19-29 0-40l20-12s4-2 7 0c10 5 25 5 34 0l114-66c10-5 10-14 0-19-3-2 0-4 0-4l21-12c19-11 50-11 69 0l505 291c19 11 19 29 0 40L648 475a77 77 0 0 1-69 0L74 184Z" clip-rule="evenodd"/>
+    <path fill="#fff" fillRule="evenodd" d="M74 184c-19-11-19-29 0-40l20-12s4-2 7 0c10 5 25 5 34 0l114-66c10-5 10-14 0-19-3-2 0-4 0-4l21-12c19-11 50-11 69 0l505 291c19 11 19 29 0 40L648 475a77 77 0 0 1-69 0L74 184Z" clipRule="evenodd"/>
   </mask>
-  <g clip-path="url(#c)" mask="url(#d)">
+  <g clipPath="url(#c)" mask="url(#d)">
     <path fill="#F2F2F2" d="M39 164 304 11l575 332-265 153z"/>
     <path fill="url(#e)" d="M0 0h306v663H0z" transform="scale(1.22477 .70706) rotate(-45 296 77)"/>
   </g>
@@ -53,9 +53,9 @@
   <defs>
     <linearGradient id="b" x1="65.3" x2="217" y1="196.7" y2="-66" gradientUnits="userSpaceOnUse">
       <stop/>
-      <stop offset=".2" stop-color="#3D3D3D"/>
-      <stop offset=".5" stop-color="#464646"/>
-      <stop offset=".7" stop-color="#3D3D3D"/>
+      <stop offset=".2" stopColor="#3D3D3D"/>
+      <stop offset=".5" stopColor="#464646"/>
+      <stop offset=".7" stopColor="#3D3D3D"/>
       <stop offset="1"/>
     </linearGradient>
     <linearGradient id="g" x1="765.5" x2="769.4" y1="431.5" y2="438" gradientUnits="userSpaceOnUse">
@@ -64,78 +64,78 @@
     </linearGradient>
     <linearGradient id="i" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="j" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="k" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="l" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="m" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="n" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="o" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="p" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="q" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="r" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="s" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="t" x1="803" x2="806.5" y1="408" y2="414" gradientUnits="userSpaceOnUse">
       <stop offset=".7"/>
-      <stop offset=".9" stop-color="#959595"/>
+      <stop offset=".9" stopColor="#959595"/>
     </linearGradient>
     <linearGradient id="x" x1="375.9" x2="382" y1="386.5" y2="376.5" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C4C4C4"/>
-      <stop offset="1" stop-color="#fff"/>
+      <stop stopColor="#C4C4C4"/>
+      <stop offset="1" stopColor="#fff"/>
     </linearGradient>
     <linearGradient id="y" x1="602.7" x2="598.2" y1="171" y2="178.7" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#CDCDCD"/>
-      <stop offset="1" stop-color="#363636"/>
+      <stop stopColor="#CDCDCD"/>
+      <stop offset="1" stopColor="#363636"/>
     </linearGradient>
     <linearGradient id="z" x1="315" x2="319.4" y1="337.9" y2="330.3" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#CDCDCD"/>
-      <stop offset="1" stop-color="#363636"/>
+      <stop stopColor="#CDCDCD"/>
+      <stop offset="1" stopColor="#363636"/>
     </linearGradient>
     <linearGradient id="C" x1="109.2" x2="109.2" y1="231" y2="237.2" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff"/>
+      <stop stopColor="#fff"/>
       <stop offset=".2"/>
-      <stop offset="1" stop-color="#CDCDCD"/>
+      <stop offset="1" stopColor="#CDCDCD"/>
     </linearGradient>
     <linearGradient id="E" x1="185.2" x2="185.2" y1="265.9" y2="272.2" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff"/>
+      <stop stopColor="#fff"/>
       <stop offset=".2"/>
-      <stop offset="1" stop-color="#CDCDCD"/>
+      <stop offset="1" stopColor="#CDCDCD"/>
     </linearGradient>
     <linearGradient id="G" x1="237.2" x2="237.2" y1="295.9" y2="302.2" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff"/>
+      <stop stopColor="#fff"/>
       <stop offset=".2"/>
-      <stop offset="1" stop-color="#CDCDCD"/>
+      <stop offset="1" stopColor="#CDCDCD"/>
     </linearGradient>
     <filter id="a" width="872.8" height="522" x="22" y="2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -237,8 +237,8 @@
       <feBlend in2="shape" result="effect2_innerShadow"/>
     </filter>
     <radialGradient id="v" cx="0" cy="0" r="1" gradientTransform="matrix(3.09138 1.78481 -1.54562 2.6771 208 74)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#3D52B9"/>
-      <stop offset="1" stop-color="#002D5F"/>
+      <stop stopColor="#3D52B9"/>
+      <stop offset="1" stopColor="#002D5F"/>
     </radialGradient>
     <clipPath id="c">
       <path fill="#fff" d="M0 0h306v663H0z" transform="scale(1.22477 .70706) rotate(-45 296 77)"/>

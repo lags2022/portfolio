@@ -6,7 +6,7 @@ interface BackdropProp {
 const Backdrop = ({ children, onClose }: BackdropProp) => {
   return (
     <div
-      className="fixed top-0 left-0 h-screen w-screen bg-black/50 z-50 overflow-y-auto"
+      className="fixed top-0 left-0 h-screen w-screen bg-black/50 z-50 overflow-y-hidden flex items-center justify-center"
       onClick={onClose}
     >
       {children}

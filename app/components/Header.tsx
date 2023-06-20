@@ -1,59 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { FaLaptopCode } from "react-icons/fa";
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
-
-const links = [
-  {
-    route: "/",
-    label: "Home",
-  },
-  {
-    route: "#about",
-    label: "About",
-  },
-  {
-    route: "#projects",
-    label: "Projects",
-  },
-  {
-    route: "#contact",
-    label: "Contact",
-  },
-];
-
-type nameSvg = "github" | "linkedin" | "facebook";
-
-const RenderSvgs = ({ name }: { name: nameSvg }) => {
-  const social = {
-    github: "https://github.com/lags2022",
-    linkedin: "https://www.linkedin.com/in/luisguzmandev",
-    facebook:
-      "https://www.facebook.com/profile.php?id=100074966380787&mibextid=ZbWKwL",
-  };
-
-  return (
-    <motion.a
-      href={social[name]}
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ y: -2 }}
-      whileTap={{ scale: 0.9 }}
-    >
-      <Image
-        src={`/images/svgs/${name}.svg`}
-        alt={name}
-        height={20}
-        width={20}
-      />
-    </motion.a>
-  );
-};
+import { FaLaptopCode, FaBars } from "react-icons/fa";
+import { useRef, useState } from "react";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
+import NavBar from "./NavBar";
+import ModalNavBar from "./ModalNavBar";
+import clsx from "clsx";
 
 const Header: React.FC = () => {
+  const [show, setshow] = useState(false);
   const { scrollYProgress } = useScroll();
   const menu = useRef<HTMLDivElement>(null);
 
@@ -87,30 +43,41 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
-            <FaLaptopCode className="text-blue-600" size={40} />
+            <FaLaptopCode className="text-blue-600 text-2xl sm:text-3xl" />
           </motion.div>
-          <h3 className="px-2 text-blue-700 font-bold text-2xl">Lgdev</h3>
+          <h3 className="px-2 text-blue-700 font-bold text-lg sm:text-2xl">
+            Lgdev
+          </h3>
         </Link>
-        <nav className="flex items-center">
-          <ul className="flex [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-semibold">
-            {links.map(({ route, label }) => (
-              <li
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                key={label}
-              >
-                <Link href={route}>{label}</Link>
-              </li>
-            ))}
-          </ul>
-          <div className="flex items-center px-2 gap-x-4">
-            <RenderSvgs name="github" />
-            <RenderSvgs name="linkedin" />
-            <RenderSvgs name="facebook" />
+        <nav className="flex items-center ">
+          <button
+            className="sm:hidden flex flex-col justify-center items-center w-8 h-8"
+            onClick={() => setshow(!show)}
+          >
+            <FaBars size={20} />
+          </button>
+          <AnimatePresence
+            initial={false}
+            mode="sync"
+            onExitComplete={() => null}
+          >
+            {show && (
+              <ModalNavBar onClose={() => setshow(false)}>
+                <NavBar onClose={() => setshow(false)} />
+              </ModalNavBar>
+            )}
+          </AnimatePresence>
+          <div className="hidden sm:flex">
+            <NavBar
+              handleMouseEnter={handleMouseEnter}
+              handleMouseLeave={handleMouseLeave}
+            />
           </div>
-          <div
-            ref={menu}
-            className={`
+        </nav>
+      </div>
+      <div
+        ref={menu}
+        className={`
             absolute bg-black/5 backdrop-blur-lg rounded 
             translate-x-[var(--left)] translate-y-[var(--top)]
             left-0 top-0
@@ -118,9 +85,7 @@ const Header: React.FC = () => {
             transition-all duration-500
             ease-in-out opacity-0 -z-10
           `}
-          />
-        </nav>
-      </div>
+      />
     </header>
   );
 };

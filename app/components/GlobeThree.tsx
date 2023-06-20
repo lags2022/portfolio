@@ -6,11 +6,12 @@ import airportHistory from "../../public/globe/my-airports.json";
 import * as THREE from "three";
 import { Color } from "three";
 import { useEffect, useRef } from "react";
-import Globe from 'react-globe.gl'
+import Globe from "react-globe.gl";
+import { toast } from "react-hot-toast";
 
 const GlobeThree = () => {
   const globeEl = useRef();
-  const MAP_CENTER = { lat: 37.6, lng: -16.6, altitude: 1.2 };
+  const MAP_CENTER = { lat: 37.6, lng: -16.6, altitude: 2 };
   //altitude es la altura
 
   const globeMaterial = new THREE.MeshPhongMaterial();
@@ -23,7 +24,6 @@ const GlobeThree = () => {
     globeMaterial.specularMap = texture;
   });
 
-  
   useEffect(() => {
     if (globeEl.current) {
       globeEl.current.controls().autoRotate = true;
@@ -35,9 +35,13 @@ const GlobeThree = () => {
   return (
     <div>
       <Globe
+        onGlobeRightClick={() => toast("Contact me 👉")}
+        width={200}
+        height={200}
         ref={globeEl}
         waitForGlobeReady={true}
-        backgroundImageUrl="/globe/night-sky.png"
+        backgroundColor="#f5f5f5"
+        // backgroundImageUrl="/globe/night-sky.png"
         objectRotation={{ y: -Math.PI * (5 / 9), z: -Math.PI / 6 }}
         animateIn={true}
         // globeImageUrl="/globe/earth-water.png"
@@ -89,4 +93,3 @@ const GlobeThree = () => {
 };
 
 export default GlobeThree;
-

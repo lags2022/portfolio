@@ -1,20 +1,28 @@
 import Backdrop from "./Backdrop";
+import { ProjectsProps } from "../../types";
 
-interface ModalProps {
-  title: string;
+interface ModalProps extends ProjectsProps {
   onClose: () => void;
 }
 
 const onProject = () => {};
 
-const Modal = ({ onClose, title }: ModalProps) => {
+const Modal = ({
+  onClose,
+  title,
+  description,
+  tecnologies,
+  github,
+}: ModalProps) => {
   return (
     <Backdrop onClose={onClose}>
       <div
-        className="w-[400px] h-[200px] m-auto bg-orange-400 border-2 border-orange-700 rounded-xl flex flex-col gap-2"
+        className="m-auto bg-orange-400 border-2 border-orange-700 rounded-xl flex flex-col gap-2"
         onClick={(evt) => evt.stopPropagation()}
       >
         <h2>{title}</h2>
+        <p>{description}</p>
+        <p>{tecnologies}</p>
         <button onClick={onClose}>close</button>
       </div>
     </Backdrop>

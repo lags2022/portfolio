@@ -47,8 +47,8 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full space-y-6">
       <h2 className="mt-20 text-center font-bold text-3xl">Contact me</h2>
-      <div className="flex gap-6">
-        <GlobeThree />
+      <div className="flex items-center justify-around gap-6 ">
+        {/* <GlobeThree /> */}
         <Formik
           initialValues={INITIAL_VALUES}
           onSubmit={handleSubmit}

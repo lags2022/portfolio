@@ -9,9 +9,9 @@ const Node = () => {
           gradientTransform="rotate(116 53 203) scale(86.48)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".3" stop-color="#3E863D" />
-          <stop offset=".5" stop-color="#55934F" />
-          <stop offset=".8" stop-color="#5AAD45" />
+          <stop offset=".3" stopColor="#3E863D" />
+          <stop offset=".5" stopColor="#55934F" />
+          <stop offset=".8" stopColor="#5AAD45" />
         </linearGradient>
         <linearGradient
           id="d"
@@ -20,9 +20,9 @@ const Node = () => {
           gradientTransform="rotate(-36 551 -214) scale(132.798)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".6" stop-color="#3E863D" />
-          <stop offset=".7" stop-color="#619857" />
-          <stop offset="1" stop-color="#76AC64" />
+          <stop offset=".6" stopColor="#3E863D" />
+          <stop offset=".7" stopColor="#619857" />
+          <stop offset="1" stopColor="#76AC64" />
         </linearGradient>
         <linearGradient
           id="f"
@@ -31,11 +31,11 @@ const Node = () => {
           gradientTransform="translate(193 280) scale(97.417)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".2" stop-color="#6BBF47" />
-          <stop offset=".4" stop-color="#79B461" />
-          <stop offset=".5" stop-color="#75AC64" />
-          <stop offset=".7" stop-color="#659E5A" />
-          <stop offset=".9" stop-color="#3E863D" />
+          <stop offset=".2" stopColor="#6BBF47" />
+          <stop offset=".4" stopColor="#79B461" />
+          <stop offset=".5" stopColor="#75AC64" />
+          <stop offset=".7" stopColor="#659E5A" />
+          <stop offset=".9" stopColor="#3E863D" />
         </linearGradient>
         <clipPath id="a">
           <path d="m239 227-42 24-3 4v49c0 2 1 3 3 4l42 25h5l42-25c2-1 3-2 3-4v-49l-3-4-42-24a5 5 0 0 0-5 0" />
@@ -57,21 +57,21 @@ const Node = () => {
       />
       <path
         fill="#333"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M95 91c0-2-1-4-3-5L50 62l-2-1h-1l-2 1L3 86c-2 1-3 3-3 5v65l1 2h3l25-14 3-4v-31l2-5 11-6a5 5 0 0 1 5 0l11 6 2 5v31l3 4 25 14h3l1-2zm200 34-1 1-14 8h-2l-14-8-1-1v-17l1-1 14-9h2l14 9 1 1zm4-125a3 3 0 0 0-4 3v65a2 2 0 0 1-3 1l-10-6h-5l-43 24-2 5v49l2 4 43 25h5l42-25c2-1 3-2 3-4V19c0-2-1-4-3-5zm141 107 2-4V91l-2-4-42-25h-5l-43 25-2 4v49l2 5 42 24h5l26-15a3 3 0 0 0 0-4l-43-24-1-3v-15l1-2 13-8h3l13 8 2 2v12l1 2h2zm0 0"
       />
       <path
         fill="#689f63"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M395 105h1l8 5v11l-8 5h-1l-9-5v-11zm0 0"
       />
-      <g clip-path="url(#a)" transform="translate(-78 -164)">
+      <g clipPath="url(#a)" transform="translate(-78 -164)">
         <path fill="url(#b)" d="m331 247-118-58-61 124 118 58zm0 0" />
       </g>
-      <g clip-path="url(#c)" transform="translate(-78 -164)">
+      <g clipPath="url(#c)" transform="translate(-78 -164)">
         <path fill="url(#d)" d="m144 264 84 113 111-81-84-114zm0 0" />
       </g>
-      <g clip-path="url(#e)" transform="translate(-78 -164)">
+      <g clipPath="url(#e)" transform="translate(-78 -164)">
         <path fill="url(#f)" d="M197 226v107h92V226zm0 0" />
       </g>
     </svg>

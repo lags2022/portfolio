@@ -6,7 +6,7 @@ import { ProjectsProps } from "../../types";
 import { motion } from "framer-motion";
 import Modal from "./Modal";
 
-const Detail = ({ title }: ProjectsProps) => {
+const Detail = ({ title, ...props }: ProjectsProps) => {
   const [modal, setModal] = useState(false);
   const onClose = () => {
     setModal(false);
@@ -17,25 +17,26 @@ const Detail = ({ title }: ProjectsProps) => {
     document.body.classList.add("open-modal");
   };
   return (
-    <li className="lg:h-[400px] lg:w-[400px] w-[300px] h-[300px]">
+    <li className="sli lg:h-[250px] lg:w-[350px] xs:w-[300px] xs:h-[200px] h-auto w-auto">
       <motion.button
-        className="flex flex-col items-center justify-center w-full h-full border-2 border-blue-300 bg-red-200 rounded-3xl"
+        className="relative flex flex-col items-center justify-center w-full h-full bg-red-200 rounded-3xl shadow-lg"
         whileHover={{ scale: 1.05 }}
         onClick={onOpen}
       >
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/50 pointer-events-none " /> */}
         <Image
-          className="object-contain"
+          className="h-full w-full cover rounded-3xl shadow-lg md:hover:blur-[1.5px] z-0"
           src="/images/details/got.webp"
           alt={title}
           width={516}
           height={290}
           loading="lazy"
         />
-        <motion.h5 className="top-0 px-4 py-2 text-lg font-semibold">
-          {title}
-        </motion.h5>
+        <div className="stitle">
+          <h5>{title}</h5>
+        </div>
       </motion.button>
-      {modal && <Modal onClose={onClose} title={title} />}
+      {modal && <Modal onClose={onClose} title={title} {...props} />}
     </li>
   );
 };

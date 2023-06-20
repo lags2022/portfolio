@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Css from "./Svgs/Css";
 import Figma from "./Svgs/Figma";
 import Git from "./Svgs/Git";
@@ -15,65 +18,67 @@ import Typescript from "./Svgs/Typescript";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col">
-      <h2 className="font-bold text-center text-2xl my-6">Skills</h2>
-      <ul className="bg-slate-200 py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-16 [&>li>svg]:h-16 [&>li>p]:font-bold [&>li>p]:text-sm [&>li>p]:text-center [&>li>svg]:m-auto gap-6 [&>li>p]:mb-1 rounded-2xl ">
-        <li>
+    <div className="sm:pt-12 flex flex-col">
+      <h2 className="font-bold text-center text-xl md:text-2xl my-2 sm:my-6">
+        Skills
+      </h2>
+      <ul className="bg-slate-200 py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-12 [&>li>svg]:h-12 sm:[&>li>svg]:w-16 sm:[&>li>svg]:h-16 [&>li>p]:font-bold [&>li>p]:text-xs sm:[&>li>p]:text-sm [&>li>p]:text-center [&>li>svg]:m-auto gap-6 [&>li>p]:mb-1 rounded-2xl">
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Javascript</p>
           <Javascript />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>React</p>
           <React />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>NextJS</p>
           <Next />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Typescript</p>
           <Typescript />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Node</p>
           <Node />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Tailwind</p>
           <Tailwind />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>React Native</p>
           <ReactNative />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>CSS3</p>
           <Css />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>HTML5</p>
           <Html />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>MongoDB</p>
           <MongoDB />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Redux</p>
           <Redux />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Graphql</p>
           <Graphql />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Git</p>
           <Git />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
           <p>Figma</p>
           <Figma />
-        </li>
+        </motion.li>
       </ul>
     </div>
   );
