@@ -4,6 +4,7 @@ import { flip } from "../utils/variantsModal";
 import { motion } from "framer-motion";
 import { FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
+import Carrusel from "./Carrusel";
 
 interface ModalProps extends ProjectsProps {
   onClose: () => void;
@@ -28,8 +29,9 @@ const Modal = ({
         className="relative m-auto h-fit w-fit bg-white rounded-xl flex flex-col gap-2 justify-center items-center p-0"
         onClick={(evt) => evt.stopPropagation()}
       >
-        <div className="my-0 flex items-center justify-center m-auto w-[70vw] ">
-          <Image
+        <div className="my-0 flex items-center justify-center m-auto w-[70vw] h-fit">
+          <Carrusel />
+          {/* <Image
             className="object-contain h-[60vh] w-auto pt-6"
             src="/images/modal/1.webp"
             alt={title}
@@ -52,7 +54,7 @@ const Modal = ({
             width={516}
             height={290}
             loading="lazy"
-          />
+          /> */}
         </div>
         <div className="w-[800px] p-6">
           <h2 className="text-2xl font-bold">{title}</h2>
