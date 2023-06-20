@@ -12,7 +12,7 @@ const ModalNavBar = ({ onClose, children }: ModalNavBarProps) => {
   return (
     <Backdrop onClose={onClose}>
       <motion.div
-        className="bg-white relative rounded-2xl flex flex-col gap-2 w-fit m-auto px-16 pt-8 pb-5"
+        className="bg-white relative rounded-2xl flex flex-col gap-2 w-fit m-auto px-16 pt-8 pb-5 shadow-xl"
         onClick={(evt) => evt.stopPropagation()}
         variants={dropIn}
         initial="hidden"
@@ -20,9 +20,14 @@ const ModalNavBar = ({ onClose, children }: ModalNavBarProps) => {
         exit="exit"
       >
         {children}
-        <button className="absolute right-3 top-3" onClick={onClose}>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="absolute right-3 top-3"
+          onClick={onClose}
+        >
           <FaWindowClose size={15} />
-        </button>
+        </motion.button>
       </motion.div>
     </Backdrop>
   );

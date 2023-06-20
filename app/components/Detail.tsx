@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ProjectsProps } from "../../types";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Modal from "./Modal";
 
 const Detail = ({ title, ...props }: ProjectsProps) => {
@@ -36,7 +36,9 @@ const Detail = ({ title, ...props }: ProjectsProps) => {
           <h5>{title}</h5>
         </div>
       </motion.button>
-      {modal && <Modal onClose={onClose} title={title} {...props} />}
+      <AnimatePresence initial={false} onExitComplete={() => null} mode="wait">
+        {modal && <Modal onClose={onClose} title={title} {...props} />}
+      </AnimatePresence>
     </li>
   );
 };
