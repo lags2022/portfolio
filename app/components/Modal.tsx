@@ -4,6 +4,9 @@ import { flip } from "../utils/variantsModal";
 import { motion } from "framer-motion";
 import { FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import { FaAngleRight } from "react-icons/fa";
 
 interface ModalProps extends ProjectsProps {
   onClose: () => void;
@@ -17,6 +20,7 @@ const Modal = ({
   description,
   tecnologies,
   github,
+  link,
 }: ModalProps) => {
   return (
     <Backdrop onClose={onClose}>
@@ -25,47 +29,85 @@ const Modal = ({
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="relative m-auto h-fit w-fit bg-white rounded-xl flex flex-col gap-2 justify-center items-center p-0"
+        className="mx-3 m-auto h-auto w-[90vw] sm:w-[calc(100vw-100px)] max-w-3xl bg-white rounded-xl flex flex-col gap-2 justify-between items-center p-0"
         onClick={(evt) => evt.stopPropagation()}
       >
-        <div className="my-0 flex items-center justify-center m-auto w-[70vw] ">
+        <Carousel
+          className="flex items-center justify-center mx-auto my-0 w-full overflow-hidden p-0 rounded-t-xl"
+          autoPlay
+          infiniteLoop
+          showStatus={false}
+          showIndicators={true}
+          showThumbs={false}
+          interval={5000}
+        >
           <Image
-            className="object-contain h-[60vh] w-auto pt-6"
+            className="object-contain"
             src="/images/modal/1.webp"
             alt={title}
-            width={516}
-            height={290}
+            width={2560}
+            height={1708}
             loading="lazy"
           />
           <Image
-            className="object-contain h-[60vh] w-auto pt-6"
-            src="/images/modal/2.jpeg"
+            className="object-contain"
+            src="/images/modal/1.webp"
             alt={title}
-            width={516}
-            height={290}
+            width={2560}
+            height={1708}
             loading="lazy"
           />
           <Image
-            className="object-contain h-[60vh] w-auto pt-6"
-            src="/images/modal/3.webp"
+            className="object-contain"
+            src="/images/modal/1.webp"
             alt={title}
-            width={516}
-            height={290}
+            width={2560}
+            height={1708}
             loading="lazy"
           />
-        </div>
-        <div className="w-[800px] p-6">
-          <h2 className="text-2xl font-bold">{title}</h2>
-          <p>{description}</p>
-          <p>{tecnologies}</p>
+        </Carousel>
+        <div className="px-6 pb-6 space-y-2">
+          <div className="flex flex-col xs:flex-row items-center justify-between">
+            <div className="flex items-center justify-center gap-x-2">
+              <h2 className="text-base sm:text-lg md:text-2xl font-bold">
+                {title}
+              </h2>
+              <motion.a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image
+                  src={`/images/svgs/github.svg`}
+                  alt={title}
+                  height={20}
+                  width={20}
+                />
+              </motion.a>
+            </div>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="anchor1 text-sm md:text-base"
+            >
+              Visit the app <FaAngleRight className="aright" size={12} />
+            </a>
+          </div>
+          <p className="text-sm md:text-base font-medium">{description}</p>
+          <p className="text-sm md:text-base font-medium">
+            <span className="font-semibold">Built with:</span> {tecnologies}
+          </p>
         </div>
         <motion.button
-          className="absolute right-3 top-3"
+          className="absolute right-5 top-5 text-white z-50"
           onClick={onClose}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaWindowClose size={20} />
+          <FaWindowClose />
         </motion.button>
       </motion.div>
     </Backdrop>

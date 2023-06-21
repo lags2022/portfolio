@@ -41,6 +41,19 @@ li {
   justify-content: center;
 }
 
+.anchor1 {
+  padding-right: 10px;
+}
+
+.aright {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.anchor1:hover .aright {
+  transform: translateX(100%);
+}
+
 @media (width<800px) {
   .stitle {
     opacity: 1;

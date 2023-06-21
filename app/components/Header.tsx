@@ -6,7 +6,6 @@ import { useRef, useState } from "react";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import NavBar from "./NavBar";
 import ModalNavBar from "./ModalNavBar";
-import clsx from "clsx";
 
 const Header: React.FC = () => {
   const [show, setshow] = useState(false);
