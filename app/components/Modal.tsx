@@ -29,7 +29,7 @@ const Modal = ({
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="mx-3 m-auto h-auto w-[90vw] sm:w-[calc(100vw-100px)] max-w-3xl bg-white rounded-xl flex flex-col gap-2 justify-between items-center p-0"
+        className="mx-3 m-auto h-auto max-h-screen w-[90vw] sm:w-[calc(100vw-100px)] max-w-3xl bg-white rounded-xl flex flex-col gap-2 justify-between items-center p-0"
         onClick={(evt) => evt.stopPropagation()}
       >
         <Carousel
