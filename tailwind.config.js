@@ -8,6 +8,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    darkMode: "class",
     extend: {
       colors: {
         dark: "#1b1b1b",
