@@ -36,8 +36,6 @@ const GlobeThree = () => {
     <div>
       <Globe
         onGlobeRightClick={() => toast("Contact me 👉")}
-        width={200}
-        height={200}
         ref={globeEl}
         waitForGlobeReady={true}
         backgroundColor="#f5f5f5"

@@ -61,8 +61,8 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full space-y-6">
       <h2 className="mt-20 text-center font-bold text-3xl">Contact me</h2>
-      <div className="m-auto py-6 flex items-center justify-around gap-6 ">
-        {/* <GlobeThree /> */}
+      <div className="m-auto py-6 flex items-center justify-center gap-6 ">
+        <GlobeThree />
         <Formik
           initialValues={INITIAL_VALUES}
           onSubmit={handleSubmit}
@@ -71,7 +71,7 @@ const Contact = () => {
           validateOnBlur={false}
         >
           {({ errors, touched, isSubmitting }) => (
-            <Form className="w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col [&>div>p]:text-red-500 [&>div>p]:text-xs focus:[&>div>input]:outline-none">
+            <Form className="w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col focus:[&>div>input]:outline-none [&>div>label]:text-sm sm:[&>div>label]:text-base">
               <div>
                 <label htmlFor="name">Name:</label>
                 <Field
