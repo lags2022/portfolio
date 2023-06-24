@@ -14,8 +14,6 @@ import { variantsView } from "../utils/variantsModal";
 
 const GlobeThree = () => {
   const globeEl = useRef();
-  const MAP_CENTER = { lat: -8.635861, lng: -75.372869, altitude: 2 };
-  //altitude es la altura
 
   const [hoverD, setHoverD] = useState<any>();
 
@@ -44,6 +42,8 @@ const GlobeThree = () => {
 
   useEffect(() => {
     if (globeEl.current) {
+      const MAP_CENTER = { lat: -8.635861, lng: -75.372869, altitude: 2 };
+      //altitude es la altura
       const glob = globeEl.current as any;
       // setTimeout(() => {
       //   // wait for scene to be populated (asynchronously)
@@ -56,7 +56,7 @@ const GlobeThree = () => {
       glob.controls().autoRotateSpeed = -1;
       glob.pointOfView(MAP_CENTER, 4000);
     }
-  }, [MAP_CENTER]);
+  }, []);
 
   return (
     <motion.div
