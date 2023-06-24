@@ -164,14 +164,14 @@ const Moon = () => {
           fill="currentColor"
           mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
         >
-          <set attributeName="opacity" begin="0.5s" to="0" />
+          {/* <set attributeName="opacity" begin="0.5s" to="0" />
           <animate
             fill="freeze"
             attributeName="r"
             begin="0.1s"
             dur="0.4s"
             values="6;10"
-          />
+          /> */}
         </circle>
       </svg>
     </div>

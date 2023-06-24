@@ -55,7 +55,7 @@ const NavBar = ({
         ))}
       </ul>
       <div className="flex items-center justify-center border-none mx-2 gap-1">
-        {/* <Sunny /> */}
+        <Sunny />
         <button
           data-mode={mode}
           className="w-8 h-5 px-1 bg-light dark:bg-dark sm:bg-dark sm:dark:bg-light  flex items-center justify-start data-[mode=dark]:justify-end rounded-lg p-0"
@@ -73,7 +73,7 @@ const NavBar = ({
             }}
           />
         </button>
-        {/* <Moon /> */}
+        <Moon />
       </div>
     </>
   );
