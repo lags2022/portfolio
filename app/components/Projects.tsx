@@ -1,17 +1,31 @@
+"use client";
+
 import { projects } from "../utils/project";
 import Detail from "./Detail";
+import { motion } from "framer-motion";
+import { variantsViewChildrenUl2 } from "../utils/variantsModal";
 
 const Projects = () => {
   return (
     <div id="projects" className="w-full flex flex-col gap-4">
-      <h2 className="pt-16 xs:pt-20 text-center font-bold text-xl md:text-3xl dark:text-light">
+      <motion.h2
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="pt-16 xs:pt-20 text-center font-bold text-xl md:text-3xl dark:text-light"
+      >
         Projects
-      </h2>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto">
+      </motion.h2>
+      <motion.ul
+        variants={variantsViewChildrenUl2}
+        className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto"
+      >
         {projects.map(({ id, title, ...props }) => (
           <Detail title={title} key={id} {...props} />
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };

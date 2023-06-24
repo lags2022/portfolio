@@ -4,8 +4,8 @@ import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import HeroSvg from "./Svgs/HeroSvg";
-import { toast } from "react-hot-toast";
 import clsx from "clsx";
+import { variantsView } from "../utils/variantsModal";
 
 type nameSvg = "github" | "linkedin" | "facebook" | "email";
 
@@ -42,8 +42,14 @@ const RenderSvgs = ({ name }: { name: nameSvg }) => {
 
 const Hero = () => {
   return (
-    <div className="pt-6 sm:pt-16 grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full m-auto">
-      <div className="row-start-2 md:row-start-1 flex flex-col gap-2">
+    <div className="pt-6 sm:pt-16 grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full m-auto overflow-hidden">
+      <motion.div
+        variants={variantsView}
+        initial="odd"
+        custom={{ translateX: "-100%" }}
+        whileInView="even"
+        className="row-start-2 md:row-start-1 flex flex-col gap-2"
+      >
         <div className="mb-2 font-bold text-3xl md:text-5xl dark:[&>h2]:text-light">
           <h2>Hi,</h2>
           <h2>I'm Luis,</h2>
@@ -54,7 +60,7 @@ const Hero = () => {
           interactions, developing web and mobile applications with better
           performance.
         </p>
-        <div className="flex gap-3 md:gap-4 items-center justify-start">
+        <div className="pl-1 flex gap-3 md:gap-4 items-center justify-start">
           <motion.button
             className="flex border-none rounded-lg w-fit px-2 py-2 md:py-3 md:px-4 bg-dark text-light items-center justify-center gap-1 dark:text-dark dark:bg-light"
             whileHover={{ scale: 1.05 }}
@@ -70,10 +76,16 @@ const Hero = () => {
           <RenderSvgs name="email" />
           {/* </div> */}
         </div>
-      </div>
-      <div className="row-start-1 md:col-start-2 w-4/6 md:w-5/6 m-auto">
+      </motion.div>
+      <motion.div
+        variants={variantsView}
+        initial="odd"
+        whileInView="even"
+        custom={{ translateX: "100%" }}
+        className="row-start-1 md:col-start-2 w-4/6 md:w-5/6 m-auto"
+      >
         <HeroSvg />
-      </div>
+      </motion.div>
     </div>
   );
 };

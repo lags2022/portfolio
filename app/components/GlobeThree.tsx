@@ -9,6 +9,8 @@ import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
 import { toast } from "react-hot-toast";
 import { SizeMe } from "react-sizeme";
+import { motion } from "framer-motion";
+import { variantsView } from "../utils/variantsModal";
 
 const GlobeThree = () => {
   const globeEl = useRef();
@@ -57,7 +59,13 @@ const GlobeThree = () => {
   }, []);
 
   return (
-    <div className="w-[250px] sm:w-[350px] md:w-[400px] lg:w-[500px]">
+    <motion.div
+      variants={variantsView}
+      initial="odd"
+      whileInView="even"
+      custom={{ translateX: "-100%" }}
+      className="w-[250px] sm:w-[350px] md:w-[400px] lg:w-[500px]"
+    >
       <SizeMe>
         {({ size: { width } }: any) => (
           <Globe
@@ -127,7 +135,7 @@ const GlobeThree = () => {
           />
         )}
       </SizeMe>
-    </div>
+    </motion.div>
   );
 };
 

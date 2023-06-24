@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   return (
     <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-20 dark:bg-dark dark:backdrop-blur-3xl">
       <motion.div
-        className="bg-gray-600 dark:bg-light fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
+        className="bg-dark dark:bg-light fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">

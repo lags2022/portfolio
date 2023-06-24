@@ -1,13 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Skills from "./Skills";
+import { variantsView } from "../utils/variantsModal";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="w-full m-auto grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center"
+      className="w-full m-auto grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center overflow-hidden"
     >
-      <div className="pt-8 xs:pt-16 h-full flex-col items-center justify-center">
+      <motion.div
+        className="pt-8 xs:pt-16 h-full flex-col items-center justify-center"
+        variants={variantsView}
+        initial="odd"
+        custom={{ translateX: "-100%" }}
+        whileInView="even"
+      >
         <div className="w-40 m-auto sm:w-auto">
           <Image
             className="rounded-2xl my-6 drop-shadow-xl m-auto"
@@ -30,7 +40,7 @@ const About = () => {
           skills and passion to your next project. Thank you for visiting me
           portfolio!
         </p>
-      </div>
+      </motion.div>
       <Skills />
     </div>
   );
