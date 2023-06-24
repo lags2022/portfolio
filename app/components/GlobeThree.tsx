@@ -56,7 +56,7 @@ const GlobeThree = () => {
       glob.controls().autoRotateSpeed = -1;
       glob.pointOfView(MAP_CENTER, 4000);
     }
-  }, []);
+  }, [MAP_CENTER]);
 
   return (
     <motion.div

@@ -52,7 +52,7 @@ const Hero = () => {
       >
         <div className="mb-2 font-bold text-3xl md:text-5xl dark:[&>h2]:text-light">
           <h2>Hi,</h2>
-          <h2>I'm Luis,</h2>
+          <h2>I&apos;m Luis,</h2>
           <h2>full stack web developer</h2>
         </div>
         <p className="font-medium text-sm md:text-base dark:text-light">

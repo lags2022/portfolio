@@ -22,19 +22,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${mont.className}`}>
       <body className="bg-light dark:bg-dark">
-        <Script id="theme-switcher" strategy="beforeInteractive">
-          {`
+        <Header />
+        {children}
+        {/* <Footer /> */}
+      </body>
+      <Script id="theme-switcher" strategy="beforeInteractive">
+        {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
           } else {
             document.documentElement.classList.remove('dark')
           }
           `}
-        </Script>
-        <Header />
-        {children}
-        {/* <Footer /> */}
-      </body>
+      </Script>
     </html>
   );
 }
