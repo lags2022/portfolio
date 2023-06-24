@@ -7,8 +7,8 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
-    darkMode: "class",
     extend: {
       colors: {
         dark: "#1b1b1b",

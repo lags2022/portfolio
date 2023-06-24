@@ -34,17 +34,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-20 transition-all duration-300 ease-in">
+    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-20 dark:bg-dark dark:backdrop-blur-3xl">
       <motion.div
-        className="bg-gray-600 fixed left-0 right-0 bottom-0 h-1.5 origin-[0%]"
+        className="bg-gray-600 dark:bg-light fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
-            <FaLaptopCode className="text-blue-600 text-2xl sm:text-3xl" />
+            <FaLaptopCode className="text-blue-600 dark:text-light text-2xl sm:text-3xl" />
           </motion.div>
-          <h3 className="px-2 text-blue-700 font-bold text-lg sm:text-2xl">
+          <h3 className="px-2 text-blue-700 dark:text-light font-bold text-lg sm:text-2xl">
             Lgdev
           </h3>
         </Link>
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             className="sm:hidden flex flex-col justify-center items-center w-8 h-8"
             onClick={() => setshow(!show)}
           >
-            <FaBars size={20} />
+            <FaBars size={20} className="dark:text-light" />
           </button>
           <AnimatePresence
             initial={false}
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
       <div
         ref={menu}
         className={`
-            absolute bg-black/5 backdrop-blur-lg rounded 
+            absolute bg-black/5 dark:bg-gray-500 backdrop-blur-lg rounded 
             translate-x-[var(--left)] translate-y-[var(--top)]
             left-0 top-0
             w-[var(--width)] h-[var(--height)]

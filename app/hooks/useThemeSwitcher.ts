@@ -4,9 +4,9 @@ type useThemeSwitcherType = [string, (str: string) => void];
 
 export const useThemeSwitcher = (): useThemeSwitcherType => {
   const preferDarkQuery = "(prefers-color-scheme: dark)";
-  const mediaQuery = window.matchMedia(preferDarkQuery);
   const [mode, setMode] = useState("");
   useEffect(() => {
+    const mediaQuery = window.matchMedia(preferDarkQuery);
     const userPref = window.localStorage.getItem("theme");
 
     const handleChange = () => {
@@ -25,10 +25,7 @@ export const useThemeSwitcher = (): useThemeSwitcherType => {
     };
     handleChange();
     mediaQuery.addEventListener("change", handleChange);
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-      window.localStorage.removeItem("theme");
-    };
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   //para configurar el localstorage
@@ -36,7 +33,8 @@ export const useThemeSwitcher = (): useThemeSwitcherType => {
     if (mode === "dark") {
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
-    } else if (mode === "light") {
+    }
+    if (mode === "light") {
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }

@@ -4,7 +4,7 @@ import Detail from "./Detail";
 const Projects = () => {
   return (
     <div id="projects" className="w-full flex flex-col gap-4">
-      <h2 className="pt-16 xs:pt-20 text-center font-bold text-xl md:text-3xl">
+      <h2 className="pt-16 xs:pt-20 text-center font-bold text-xl md:text-3xl dark:text-light">
         Projects
       </h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto">

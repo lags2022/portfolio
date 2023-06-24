@@ -18,14 +18,17 @@ const About = () => {
             loading="lazy"
           />
         </div>
-        <p className="font-medium text-sm md:text-base text-center px-3 sm:px-6 ">
+        <p className="font-medium text-sm md:text-base text-center px-3 sm:px-6 dark:text-light ">
           My name is{" "}
-          <span className="font-bold text-blue-700">Luis Guzman</span>. I&apos;m
-          a full stack and freelance web developer in Peru. I&apos;m passionate
-          about movies, technology and the programming. Professionally I&apos;m
-          connected to the industry of web development and movil. I&apos;m
-          excited to have the opportunity to contribute my skills and passion to
-          your next project. Thank you for visiting me portfolio!
+          <span className="font-bold text-blue-700 dark:text-blue-300">
+            Luis Guzman
+          </span>
+          . I&apos;m a full stack and freelance web developer in Peru. I&apos;m
+          passionate about movies, technology and the programming.
+          Professionally I&apos;m connected to the industry of web development
+          and movil. I&apos;m excited to have the opportunity to contribute my
+          skills and passion to your next project. Thank you for visiting me
+          portfolio!
         </p>
       </div>
       <Skills />

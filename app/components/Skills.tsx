@@ -19,10 +19,10 @@ import Typescript from "./Svgs/Typescript";
 const Skills = () => {
   return (
     <div className="sm:pt-12 flex flex-col">
-      <h2 className="font-bold text-center text-xl md:text-2xl my-2 sm:my-6">
+      <h2 className="font-bold text-center text-xl md:text-2xl my-2 sm:my-6 dark:text-light">
         Skills
       </h2>
-      <ul className="bg-slate-200 py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-12 [&>li>svg]:h-12 sm:[&>li>svg]:w-16 sm:[&>li>svg]:h-16 [&>li>p]:font-bold [&>li>p]:text-xs sm:[&>li>p]:text-sm [&>li>p]:text-center [&>li>svg]:m-auto gap-6 [&>li>p]:mb-1 rounded-2xl">
+      <ul className="dark:bg-dark py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-12 [&>li>svg]:h-12 sm:[&>li>svg]:w-16 sm:[&>li>svg]:h-16 [&>li>p]:font-bold [&>li>p]:text-xs sm:[&>li>p]:text-sm [&>li>p]:text-center [&>li>svg]:m-auto gap-6 [&>li>p]:mb-1 dark:[&>li>p]:text-light ">
         <motion.li whileHover={{ scale: 1.1 }}>
           <p>Javascript</p>
           <Javascript />

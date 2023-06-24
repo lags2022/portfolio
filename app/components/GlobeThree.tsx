@@ -66,7 +66,7 @@ const GlobeThree = () => {
             height={width}
             ref={globeEl}
             waitForGlobeReady={true}
-            backgroundColor="#f5f5f5"
+            backgroundColor="#f5f5f500"
             // backgroundImageUrl="/globe/night-sky.png"
             // objectRotation={{ y: -Math.PI * (5 / 9), z: -Math.PI / 6 }}
             animateIn={true}

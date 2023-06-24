@@ -29,7 +29,7 @@ const Modal = ({
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="mx-3 m-auto h-auto max-h-screen w-[90vw] sm:w-[calc(100vw-100px)] max-w-3xl bg-white rounded-xl flex flex-col gap-2 justify-between items-center p-0"
+        className="mx-3 m-auto h-auto max-h-screen w-[90vw] sm:w-[calc(100vw-100px)] max-w-3xl bg-dark dark:bg-light rounded-xl flex flex-col gap-2 justify-between items-center p-0"
         onClick={(evt) => evt.stopPropagation()}
       >
         <Carousel
@@ -66,8 +66,8 @@ const Modal = ({
             loading="lazy"
           />
         </Carousel>
-        <div className="px-6 pb-6 space-y-2">
-          <div className="flex flex-col xs:flex-row items-center justify-between">
+        <div className="px-6 pb-6 space-y-2 text-light dark:text-dark">
+          <div className="flex flex-col xs:flex-row items-center justify-between ">
             <div className="flex items-center justify-center gap-x-2">
               <h2 className="text-base sm:text-lg md:text-2xl font-bold">
                 {title}
@@ -78,6 +78,7 @@ const Modal = ({
                 rel="noopener noreferrer"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
+                className="bg-light rounded-sm"
               >
                 <Image
                   src={`/images/svgs/github.svg`}
@@ -91,7 +92,7 @@ const Modal = ({
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="anchor1 text-sm md:text-base"
+              className="anchor1 text-sm md:text-base "
             >
               Visit the app <FaAngleRight className="aright" size={12} />
             </a>

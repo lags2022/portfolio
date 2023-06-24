@@ -10,9 +10,10 @@ import clsx from "clsx";
 import ErrorForm from "./ErrorForm";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import Skeleton from "./Svgs/Skeleton";
 
 const GlobeThree = dynamic(() => import("./GlobeThree"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => <Skeleton />,
   ssr: false, // Deshabilita la renderización del lado del servidor
 });
 
@@ -60,7 +61,9 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="w-full">
-      <h2 className="mt-20 text-center font-bold text-3xl">Contact me</h2>
+      <h2 className="mt-20 text-center font-bold text-3xl text-dark dark:text-light">
+        Contact me
+      </h2>
       <div className="m-auto p-0 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 ">
         <GlobeThree />
         <Formik
@@ -71,7 +74,7 @@ const Contact = () => {
           validateOnBlur={false}
         >
           {({ errors, touched, isSubmitting }) => (
-            <Form className="w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col [&>div>p]:text-red-500 [&>div>p]:text-xs focus:[&>div>input]:outline-none sm:[&>div>label]:text-base [&>div>label]:text-sm  ">
+            <Form className="w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col focus:[&>div>input]:outline-none sm:[&>div>label]:text-base [&>div>label]:text-sm text-dark dark:text-light ">
               <div>
                 <label htmlFor="name">Name:</label>
                 <Field
@@ -134,7 +137,7 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 className={clsx(
-                  `relative m-auto p-0 h-10 w-24 rounded-lg font-semibold bg-black text-white flex items-center justify-center gap-1 `,
+                  `relative m-auto p-0 h-10 w-24 rounded-lg font-semibold bg-black text-light dark:text-dark dark:bg-light flex items-center justify-center gap-1 `,
                   isSubmitting && "cursor-not-allowed"
                 )}
                 disabled={isSubmitting}
@@ -147,7 +150,11 @@ const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
               >
-                {show2 ? <div className="loading" /> : `${check}` || "Submit"}
+                {show2 ? (
+                  <div className="loading dark:border-dark dark:border-t-light" />
+                ) : (
+                  `${check}` || "Submit"
+                )}
               </motion.button>
             </Form>
           )}
