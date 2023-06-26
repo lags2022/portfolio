@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import Skeleton from "./Svgs/Skeleton";
 import { variantsView } from "../utils/variantsModal";
 
-const GlobeThree = dynamic(() => import("./GlobeThree"), {
+const GlobeThree = dynamic(() => import("./World"), {
   loading: () => <Skeleton />,
   ssr: false, // Deshabilita la renderización del lado del servidor
 });
