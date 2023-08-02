@@ -5,7 +5,12 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import HeroSvg from "./Svgs/HeroSvg";
 import clsx from "clsx";
-import { variantsView } from "../utils/variantsModal";
+import {
+  variantsView,
+  showView,
+  variantsViewChildrenLi2,
+  variantsViewChildrenUl2,
+} from "../utils/variantsModal";
 
 type nameSvg = "github" | "linkedin" | "facebook" | "email";
 
@@ -42,29 +47,41 @@ const RenderSvgs = ({ name }: { name: nameSvg }) => {
 
 const Hero = () => {
   return (
-    <div className="pt-6 sm:pt-16 grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full m-auto overflow-hidden">
+    <div className="pl-5 pt-6 sm:pt-16 grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full m-auto overflow-hidden">
       <motion.div
-        variants={variantsView}
-        initial="odd"
-        custom={{ translateX: "-100%" }}
-        whileInView="even"
+        variants={variantsViewChildrenUl2}
         className="row-start-2 md:row-start-1 flex flex-col gap-2"
       >
-        <div className="mb-2 font-bold text-3xl md:text-5xl dark:[&>h2]:text-light">
+        <motion.div
+          variants={variantsViewChildrenLi2}
+          initial="odd"
+          whileInView="even"
+          className="mb-2 font-bold text-3xl md:text-5xl dark:[&>h2]:text-light"
+        >
           <h2>Hi,</h2>
           <h2>I&apos;m Luis,</h2>
           <h2>full stack web developer</h2>
-        </div>
-        <p className="font-medium text-sm md:text-base dark:text-light">
+        </motion.div>
+        <motion.p
+          variants={variantsViewChildrenLi2}
+          initial="odd"
+          whileInView="even"
+          className="font-medium text-sm md:text-base dark:text-light"
+        >
           Solving design problems, building smart user interfaces and useful
           interactions, developing web and mobile applications with better
           performance.
-        </p>
-        <div className="pl-1 flex gap-3 md:gap-4 items-center justify-start">
+        </motion.p>
+        <motion.div
+          variants={variantsViewChildrenLi2}
+          initial="odd"
+          whileInView="even"
+          className="flex gap-3 md:gap-4 items-center justify-start"
+        >
           <motion.button
-            className="flex border-none rounded-lg w-fit px-2 py-2 md:py-3 md:px-4 bg-dark text-light items-center justify-center gap-1 dark:text-dark dark:bg-light"
+            className="flex border-none rounded-lg w-fit px-2 py-2 md:py-3 md:px-4 bg-dark text-light items-center justify-center gap-1 dark:text-dark dark:bg-light dark:hover:text-white  hover:bg-blue-700 hover:dark:bg-blue-700"
+            whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 1.0 }}
           >
             <p className="text-xs md:text-sm font-semibold">Resume CV</p>
             <HiOutlineExternalLink className="text-base md:text-xl" />
@@ -75,13 +92,12 @@ const Hero = () => {
           <RenderSvgs name="facebook" />
           <RenderSvgs name="email" />
           {/* </div> */}
-        </div>
+        </motion.div>
       </motion.div>
       <motion.div
-        variants={variantsView}
+        variants={showView}
         initial="odd"
-        whileInView="even"
-        custom={{ translateX: "100%" }}
+        animate="even"
         className="row-start-1 md:col-start-2 w-4/6 md:w-5/6 m-auto"
       >
         <HeroSvg />

@@ -59,6 +59,20 @@ export const variantsView = {
   },
 };
 
+export const showView = {
+  odd: {
+    opacity: 0,
+    filter: "blur(5px)",
+  },
+  even: {
+    opacity: 1,
+    filter: "blur(0)",
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 export const variantsViewChildrenUl = {
   odd: {
     opacity: 0,

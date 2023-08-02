@@ -62,24 +62,25 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full overflow-hidden">
+    <div id="contact" className="w-full overflow-hidden ">
       <motion.h2
-        variants={variantsView}
-        initial="odd"
-        whileInView="even"
-        transition={{ duration: 1.5 }}
-        custom={{ translateX: "-100%" }}
-        className="mt-20 text-center font-bold text-3xl text-dark dark:text-light"
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="mt-20 text-center font-bold text-xl md:text-3xl text-dark dark:text-light "
       >
         Contact me
       </motion.h2>
       <div className="m-auto p-0 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 ">
         <GlobeThree />
         <motion.div
-          variants={variantsView}
-          initial="odd"
-          whileInView="even"
-          custom={{ translateX: "100%" }}
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+          }}
         >
           <Formik
             initialValues={INITIAL_VALUES}
@@ -89,7 +90,7 @@ const Contact = () => {
             validateOnBlur={false}
           >
             {({ errors, touched, isSubmitting }) => (
-              <Form className="w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col focus:[&>div>input]:outline-none sm:[&>div>label]:text-base [&>div>label]:text-sm text-dark dark:text-light ">
+              <Form className="pb-2 w-[300px] flex flex-col gap-4 [&>div]:flex [&>div]:flex-col focus:[&>div>input]:outline-none md:[&>div>label]:text-base [&>div>label]:text-sm text-dark dark:text-light ">
                 <div>
                   <label htmlFor="name">Name:</label>
                   <Field
@@ -152,7 +153,7 @@ const Contact = () => {
                 <motion.button
                   type="submit"
                   className={clsx(
-                    `relative m-auto p-0 h-10 w-24 rounded-lg font-semibold bg-black text-light dark:text-dark dark:bg-light flex items-center justify-center gap-1 `,
+                    `relative m-auto p-0 h-8 w-20 md:h-10 md:w-24 rounded-lg font-semibold bg-black text-light dark:text-dark dark:bg-light flex items-center justify-center gap-1 md:text-base text-sm`,
                     isSubmitting && "cursor-not-allowed"
                   )}
                   disabled={isSubmitting}

@@ -4,7 +4,9 @@ export interface ProjectsProps {
   description?: string;
   tecnologies?: string;
   github?: string;
+  github2?: string;
   link?: string;
+  link2?: string;
 }
 
 export interface ContactProps {
