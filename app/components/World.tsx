@@ -26,7 +26,7 @@ const World = () => {
       >
         <OrbitControls
           autoRotate
-          enableZoom={true}
+          enableZoom={false}
           enableRotate={true}
           enablePan={true}
           maxPolarAngle={Math.PI}
