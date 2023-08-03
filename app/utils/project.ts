@@ -3,13 +3,20 @@ import { ProjectsProps } from "../../types";
 export const projects: ProjectsProps[] = [
   {
     id: 1,
-    title: "Pokemon Api",
+    title: "Pokemon App",
     description:
-      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary Image",
+      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary imageFrontPage",
     tecnologies:
-      "Javascript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Hosting)",
+      "JavaScript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Deploy)",
     github: "https://github.com/lags2022/pokemonPI",
     link: "https://pokemonp.netlify.app/",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
   {
     id: 2,
@@ -17,9 +24,12 @@ export const projects: ProjectsProps[] = [
     description:
       "Online store similar to Amazon with payment gateway and database.",
     tecnologies:
-      "React, NextJS, NextAuth, Redux Toolkit, Tailwind, Stripe(version web), Firebase(Database), Vercel(Hosting)",
+      "React, NextJS, NextAuth, Redux Toolkit, TailwindCSS, Stripe(version web), Firebase(Database), Vercel(Deploy)",
     github: "https://github.com/lags2022/amazon-clone",
     link: "https://amazon-clone-lags2022.vercel.app/",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
+    images: [""],
   },
   {
     id: 3,
@@ -29,27 +39,33 @@ export const projects: ProjectsProps[] = [
       "React Native, Expo EAS(build), Redux Toolkit, Stripe(version movil), Firebase(Authentication:rnFirebase, Database) ",
     github: "https://github.com/lags2022/amazon-clone-reactnative",
     link: "https://appetize.io/app/izen7lxuos6fpd2grq75n6lxta?device=pixel4&osVersion=11.0&scale=75",
-    link2:
-      "https://drive.google.com/file/d/1qAkmMuyW65XCOFUb9LMESG4wu53vEWwR/view?usp=sharing",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
+    images: [""],
   },
   {
     id: 4,
     title: "Messenger 2.0 App",
     description: "Real-Time Messenger clone with database",
     tecnologies:
-      "Typescript, React, NextJS, NextAuth, Tailwind, Prisma, MongoDB(Database), Pusher ",
+      "TypeScript, JavaScript, React, NextJS, NextAuth, TailwindCSS, Prisma, MongoDB(Database), Pusher, Vercel(Deploy) ",
     github: "https://github.com/lags2022/app_messenger",
-    link: "https://rickyandmortyfront.netlify.app/",
+    link: "https://app-messenger.vercel.app/",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
+    images: [""],
   },
   {
     id: 5,
     title: "Portfolio App",
-    description:
-      "Search, filter and show characters. Save your favorite characters and store that information in a database.",
+    description: "Project Portfolio",
     tecnologies:
-      "Javascript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Hosting)",
+      "TypeScript, JavaScript, HTML, CSS3, React, NextJS, TailwindCSS, Vercel(Deploy)",
     github: "https://github.com/lags2022/portfolio",
-    link: "",
+    link: "https://portfolio-lags2022.vercel.app",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
+    images: [""],
   },
   {
     id: 6,
@@ -57,8 +73,11 @@ export const projects: ProjectsProps[] = [
     description:
       "Search, filter and show characters. Save your favorite characters and store that information in a database.",
     tecnologies:
-      "Javascript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Hosting)",
+      "JavaScript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Deploy)",
     github: "https://github.com/lags2022/py-rickyandmorty",
     link: "https://rickyandmortyfront.netlify.app/",
+    imageFrontPage:
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
+    images: [""],
   },
 ];

@@ -22,8 +22,13 @@ const Projects = () => {
         variants={variantsViewChildrenUl2}
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto"
       >
-        {projects.map(({ id, title, ...props }) => (
-          <Detail title={title} key={id} {...props} />
+        {projects.map(({ id, title, imageFrontPage, ...props }) => (
+          <Detail
+            title={title}
+            key={id}
+            imageFrontPage={imageFrontPage}
+            {...props}
+          />
         ))}
       </motion.ul>
     </div>

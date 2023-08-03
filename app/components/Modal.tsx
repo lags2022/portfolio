@@ -19,8 +19,10 @@ const Modal = ({
   title,
   description,
   tecnologies,
+  images,
   github,
   link,
+  imageFrontPage,
 }: ModalProps) => {
   return (
     <Backdrop onClose={onClose}>
@@ -41,30 +43,16 @@ const Modal = ({
           showThumbs={false}
           interval={5000}
         >
-          <Image
-            className="object-contain"
-            src="/images/modal/1.webp"
-            alt={title}
-            width={2560}
-            height={1708}
-            loading="lazy"
-          />
-          <Image
-            className="object-contain"
-            src="/images/modal/1.webp"
-            alt={title}
-            width={2560}
-            height={1708}
-            loading="lazy"
-          />
-          <Image
-            className="object-contain"
-            src="/images/modal/1.webp"
-            alt={title}
-            width={2560}
-            height={1708}
-            loading="lazy"
-          />
+          {images.map((imgurl) => (
+            <Image
+              className="object-contain"
+              src={imgurl}
+              alt={title}
+              width={1300}
+              height={860}
+              loading="lazy"
+            />
+          ))}
         </Carousel>
         <div className="px-6 pb-6 space-y-2 text-light dark:text-dark">
           <div className="flex flex-col xs:flex-row items-center justify-between ">

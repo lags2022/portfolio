@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Modal from "./Modal";
 import { variantsViewChildrenLi2 } from "../utils/variantsModal";
 
-const Detail = ({ title, ...props }: ProjectsProps) => {
+const Detail = ({ title, imageFrontPage, ...props }: ProjectsProps) => {
   const [modal, setModal] = useState(false);
   const onClose = () => {
     setModal(false);
@@ -33,7 +33,7 @@ const Detail = ({ title, ...props }: ProjectsProps) => {
         {/* <div className="absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/50 pointer-events-none " /> */}
         <Image
           className="h-full w-full cover border-none rounded-3xl shadow-lg md:hover:blur-[1.5px] z-0"
-          src="/images/details/got.webp"
+          src={imageFrontPage}
           alt={title}
           width={516}
           height={290}
@@ -44,7 +44,14 @@ const Detail = ({ title, ...props }: ProjectsProps) => {
         </div>
       </motion.button>
       <AnimatePresence initial={false} onExitComplete={() => null} mode="wait">
-        {modal && <Modal onClose={onClose} title={title} {...props} />}
+        {modal && (
+          <Modal
+            onClose={onClose}
+            title={title}
+            imageFrontPage={imageFrontPage}
+            {...props}
+          />
+        )}
       </AnimatePresence>
     </motion.li>
   );

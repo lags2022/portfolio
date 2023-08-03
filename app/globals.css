@@ -35,7 +35,8 @@ li {
   font-weight: 500;
   font-size: larger;
   background-color: rgba(0, 0, 0, 0.1);
-  color: white;
+  color: black;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,11 +63,7 @@ li {
   }
 
   .stitle > h5 {
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2px 6px;
     font-size: medium;
-    border-radius: 20px;
   }
 }
 
