@@ -43,8 +43,9 @@ const Modal = ({
           showThumbs={false}
           interval={5000}
         >
-          {images.map((imgurl) => (
+          {images.map((imgurl, i) => (
             <Image
+              key={i}
               className="object-contain"
               src={imgurl}
               alt={title}

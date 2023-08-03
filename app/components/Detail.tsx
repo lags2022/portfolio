@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Modal from "./Modal";
 import { variantsViewChildrenLi2 } from "../utils/variantsModal";
 
-const Detail = ({ title, imageFrontPage, ...props }: ProjectsProps) => {
+const Detail = ({  title, imageFrontPage, ...props }: ProjectsProps) => {
   const [modal, setModal] = useState(false);
   const onClose = () => {
     setModal(false);
@@ -35,8 +35,8 @@ const Detail = ({ title, imageFrontPage, ...props }: ProjectsProps) => {
           className="h-full w-full cover border-none rounded-3xl shadow-lg md:hover:blur-[1.5px] z-0"
           src={imageFrontPage}
           alt={title}
-          width={516}
-          height={290}
+          width={300}
+          height={200}
           loading="lazy"
         />
         <div className="stitle">

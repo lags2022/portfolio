@@ -24,8 +24,8 @@ const Projects = () => {
       >
         {projects.map(({ id, title, imageFrontPage, ...props }) => (
           <Detail
-            title={title}
             key={id}
+            title={title}
             imageFrontPage={imageFrontPage}
             {...props}
           />
