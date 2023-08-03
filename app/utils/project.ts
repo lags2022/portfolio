@@ -28,8 +28,12 @@ export const projects: ProjectsProps[] = [
     github: "https://github.com/lags2022/amazon-clone",
     link: "https://amazon-clone-lags2022.vercel.app/",
     imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
-    images: [""],
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
   {
     id: 3,
@@ -40,8 +44,12 @@ export const projects: ProjectsProps[] = [
     github: "https://github.com/lags2022/amazon-clone-reactnative",
     link: "https://appetize.io/app/izen7lxuos6fpd2grq75n6lxta?device=pixel4&osVersion=11.0&scale=75",
     imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
-    images: [""],
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
   {
     id: 4,
@@ -52,8 +60,12 @@ export const projects: ProjectsProps[] = [
     github: "https://github.com/lags2022/app_messenger",
     link: "https://app-messenger.vercel.app/",
     imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
-    images: [""],
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
   {
     id: 5,
@@ -64,8 +76,12 @@ export const projects: ProjectsProps[] = [
     github: "https://github.com/lags2022/portfolio",
     link: "https://portfolio-lags2022.vercel.app",
     imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
-    images: [""],
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
   {
     id: 6,
@@ -77,7 +93,11 @@ export const projects: ProjectsProps[] = [
     github: "https://github.com/lags2022/py-rickyandmorty",
     link: "https://rickyandmortyfront.netlify.app/",
     imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691009573/pokemon_gx38ki.gif",
-    images: [""],
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    images: [
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024325/pokemon_3_zzkw8l.webp",
+    ],
   },
 ];
