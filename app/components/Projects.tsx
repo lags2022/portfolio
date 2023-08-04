@@ -23,12 +23,7 @@ const Projects = () => {
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto"
       >
         {projects.map(({ id, title, gif, ...props }) => (
-          <Detail
-            key={id}
-            title={title}
-            gif={gif}
-            {...props}
-          />
+          <Detail key={id} title={title} gif={gif} {...props} />
         ))}
       </motion.ul>
     </div>
