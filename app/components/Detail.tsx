@@ -44,7 +44,7 @@ const Detail = ({ title, gif, images, ...props }: ProjectsProps) => {
           alt={title}
           width={300}
           height={200}
-          loading="lazy"
+          priority={true}
         />
         <div className="stitle">
           <h5>{title}</h5>

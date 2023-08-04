@@ -28,9 +28,9 @@ export const projects: ProjectsProps[] = [
     link: "https://amazon-clone-lags2022.vercel.app/",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107968/amazon_opfkhx.gif",
     images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691108865/amazon_1_dwsnwf.png",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691108149/amazon_2_e6gjkw.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691108159/amazon_3_cgtmpo.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167178/Amazon_1_p0ctl1.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167178/amazon_2_ibdtjb.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167178/amazon_3_rxpu7e.webp",
     ],
   },
   {
@@ -43,9 +43,9 @@ export const projects: ProjectsProps[] = [
     link: "https://appetize.io/app/izen7lxuos6fpd2grq75n6lxta?device=pixel4&osVersion=11.0&scale=75",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163383/amazon_movil_alm0bp.gif",
     images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163388/amazon_movil_1_rtkj54.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163395/amazon_movil_3_gjug1p.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163392/amazon_movil_2_fxw16z.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167166/amazon_movil_1_ftpizq.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167166/amazon_movil_3_gntcmm.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167166/amazon_movil_2_wxklx0.webp",
     ],
   },
   {
@@ -53,29 +53,29 @@ export const projects: ProjectsProps[] = [
     title: "Messenger 2.0 App",
     description: "Real-Time Messenger clone with database",
     tecnologies:
-      "TypeScript, JavaScript, React, NextJS, NextAuth, TailwindCSS, Prisma, MongoDB(Database), Pusher, Vercel(Deploy) ",
+      "TypeScript, JavaScript, React, NextJS, NextAuth, TailwindCSS, Prisma, MongoDB(Database), Headless UI, Pusher, Vercel(Deploy)",
     github: "https://github.com/lags2022/app_messenger",
     link: "https://app-messenger.vercel.app/",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164284/messenger_zayokg.gif",
     images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164293/messenger_2_uur7rk.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164297/messenger_3_z6wam8.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164289/messenger_1_u0uckd.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167147/messenger_2_px6jzi.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167147/messenger_3_tdjhdj.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167147/messenger_1_hffm0v.webp",
     ],
   },
   {
     id: 5,
     title: "Portfolio App",
-    description: "Project Portfolio",
+    description: "Project Portfolio, you are on the website 😊!",
     tecnologies:
-      "TypeScript, JavaScript, HTML, CSS3, React, NextJS, TailwindCSS, Vercel(Deploy)",
+      "TypeScript, JavaScript, HTML, CSS3, React, NextJS, TailwindCSS, Framer Motion, Vercel(Deploy)",
     github: "https://github.com/lags2022/portfolio",
     link: "https://portfolio-lags2022.vercel.app",
-    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691166231/portfolio_izderr.gif",
     images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164365/portfolio_1_qf3vq3.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164366/portfolio_2_solvah.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164366/portfolio_3_q6oybg.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_1_w3ja4m.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_2_wq6aq9.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_3_vzacvq.webp",
     ],
   },
   {
@@ -89,9 +89,9 @@ export const projects: ProjectsProps[] = [
     link: "https://rickyandmortyfront.netlify.app/",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164419/ricky_ovuq6f.gif",
     images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164418/rick_2_asmhqi.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164418/rick_1_d0gxid.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164418/rick_3_hhfm5w.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167129/rick_2_xecipv.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167129/rick_1_iqdu8q.webp",
+      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167128/rick_3_pucyzo.webp",
     ],
   },
 ];

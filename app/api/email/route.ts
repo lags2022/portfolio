@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 
 const EMAIL_USER = process.env.EMAIL_USER;
 const PASS_USER = process.env.PASS_USER;
+const EMAIL_TO = process.env.EMAIL_TO;
 
 export async function POST(request: Request) {
   try {
@@ -21,10 +22,10 @@ export async function POST(request: Request) {
 
     await transporter.sendMail({
       from: EMAIL_USER,
-      to: email,
+      to: EMAIL_TO,
       subject: "Contact Portfolio",
       text: message,
-      html: `<h1>${name} ${email}</h1><p>${message}</p>`,
+      html: `<h3>Name: ${name}</h3><h5>Email: ${email}</h5><p>Message: ${message}</p>`,
     });
 
     return NextResponse.json({ success: true });

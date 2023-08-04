@@ -2,11 +2,10 @@ import Backdrop from "./Backdrop";
 import { ProjectsProps } from "../../types";
 import { flip } from "../utils/variantsModal";
 import { motion } from "framer-motion";
-import { FaWindowClose } from "react-icons/fa";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaTimes } from "react-icons/fa";
 
 interface ModalProps extends ProjectsProps {
   onClose: () => void;
@@ -92,12 +91,12 @@ const Modal = ({
           </p>
         </div>
         <motion.button
-          className="absolute right-5 top-5 text-white z-50"
+          className="absolute right-5 top-5 z-50 bg-black rounded-sm p-0.5"
           onClick={onClose}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaWindowClose />
+          <FaTimes color="white" size={13} />
         </motion.button>
       </motion.div>
     </Backdrop>

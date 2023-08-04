@@ -35,9 +35,9 @@ li {
 .stitle {
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
   height: 100%;
@@ -50,6 +50,12 @@ li {
   color: black;
   font-size: larger;
   font-weight: bold;
+}
+
+.stitle > h5 {
+  padding: 2px 6px;
+  border-radius: 2px;
+  background-color: white;
 }
 
 .anchor1 {
@@ -68,15 +74,11 @@ li {
 @media (width<768px) {
   .stitle {
     opacity: 1;
-    align-items: end;
     background-color: none;
   }
 
   .stitle > h5 {
-    backdrop-filter: blur(2px);
-    padding: 2px 6px;
     font-size: medium;
-    border-radius: 20px;
   }
 }
 
