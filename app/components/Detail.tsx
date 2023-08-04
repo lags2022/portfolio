@@ -31,7 +31,7 @@ const Detail = ({ title, gif, images, ...props }: ProjectsProps) => {
         onClick={onOpen}
       >
         <Image
-          className="hidden-image h-full w-full cover border-none rounded-3xl shadow-lg md:hover:blur-[2px] z-0"
+          className="hidden-image h-full w-full cover border-none rounded-3xl z-0"
           src={images[0]}
           alt={title}
           width={300}
@@ -39,12 +39,11 @@ const Detail = ({ title, gif, images, ...props }: ProjectsProps) => {
           loading="lazy"
         />
         <Image
-          className="hidden-display h-full w-full cover border-none rounded-3xl shadow-lg md:hover:blur-[2px] z-0"
+          className="hidden-display h-full w-full cover border-none rounded-3xl md:hover:blur-[2px] z-0"
           src={gif}
           alt={title}
           width={300}
           height={200}
-          priority={true}
         />
         <div className="stitle">
           <h5>{title}</h5>
