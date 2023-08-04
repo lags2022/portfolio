@@ -5,13 +5,12 @@ export const projects: ProjectsProps[] = [
     id: 1,
     title: "Pokemon App",
     description:
-      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary imageFrontPage",
+      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary gif",
     tecnologies:
       "JavaScript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Deploy)",
     github: "https://github.com/lags2022/pokemonPI",
     link: "https://pokemonp.netlify.app/",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107928/pokemon_ixqbhb.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107928/pokemon_ixqbhb.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024315/pokemon_1_gdxvhf.webp",
@@ -27,8 +26,7 @@ export const projects: ProjectsProps[] = [
       "React, NextJS, NextAuth, Redux Toolkit, TailwindCSS, Stripe(version web), Firebase(Database), Vercel(Deploy)",
     github: "https://github.com/lags2022/amazon-clone",
     link: "https://amazon-clone-lags2022.vercel.app/",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107968/amazon_opfkhx.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107968/amazon_opfkhx.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691108865/amazon_1_dwsnwf.png",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691108149/amazon_2_e6gjkw.webp",
@@ -43,8 +41,7 @@ export const projects: ProjectsProps[] = [
       "React Native, Expo EAS(build), Redux Toolkit, Stripe(version movil), Firebase(Authentication:rnFirebase, Database) ",
     github: "https://github.com/lags2022/amazon-clone-reactnative",
     link: "https://appetize.io/app/izen7lxuos6fpd2grq75n6lxta?device=pixel4&osVersion=11.0&scale=75",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163383/amazon_movil_alm0bp.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163383/amazon_movil_alm0bp.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163388/amazon_movil_1_rtkj54.webp",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691163395/amazon_movil_3_gjug1p.webp",
@@ -59,8 +56,7 @@ export const projects: ProjectsProps[] = [
       "TypeScript, JavaScript, React, NextJS, NextAuth, TailwindCSS, Prisma, MongoDB(Database), Pusher, Vercel(Deploy) ",
     github: "https://github.com/lags2022/app_messenger",
     link: "https://app-messenger.vercel.app/",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164284/messenger_zayokg.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164284/messenger_zayokg.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164293/messenger_2_uur7rk.webp",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164297/messenger_3_z6wam8.webp",
@@ -75,8 +71,7 @@ export const projects: ProjectsProps[] = [
       "TypeScript, JavaScript, HTML, CSS3, React, NextJS, TailwindCSS, Vercel(Deploy)",
     github: "https://github.com/lags2022/portfolio",
     link: "https://portfolio-lags2022.vercel.app",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024312/pokemon_fikxs9.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164365/portfolio_1_qf3vq3.webp",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164366/portfolio_2_solvah.webp",
@@ -92,8 +87,7 @@ export const projects: ProjectsProps[] = [
       "JavaScript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Deploy)",
     github: "https://github.com/lags2022/py-rickyandmorty",
     link: "https://rickyandmortyfront.netlify.app/",
-    imageFrontPage:
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164419/ricky_ovuq6f.gif",
+    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164419/ricky_ovuq6f.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164418/rick_2_asmhqi.webp",
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691164418/rick_1_d0gxid.webp",
