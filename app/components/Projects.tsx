@@ -22,11 +22,11 @@ const Projects = () => {
         variants={variantsViewChildrenUl2}
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-center m-auto"
       >
-        {projects.map(({ id, title, imageFrontPage, ...props }) => (
+        {projects.map(({ id, title, gif, ...props }) => (
           <Detail
             key={id}
             title={title}
-            imageFrontPage={imageFrontPage}
+            gif={gif}
             {...props}
           />
         ))}

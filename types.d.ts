@@ -5,7 +5,7 @@ export interface ProjectsProps {
   tecnologies?: string;
   github?: string;
   link?: string;
-  imageFrontPage: string;
+  gif: string;
   images: Array<string>;
 }
 

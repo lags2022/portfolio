@@ -22,7 +22,7 @@ const Modal = ({
   images,
   github,
   link,
-  imageFrontPage,
+  gif,
 }: ModalProps) => {
   return (
     <Backdrop onClose={onClose}>
