@@ -5,7 +5,7 @@ export const projects: ProjectsProps[] = [
     id: 1,
     title: "Pokemon App",
     description:
-      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary gif",
+      "Search, filter and show pokemons. Create your pokemon in a database. View Transition Api. Cloudinary",
     tecnologies:
       "JavaScript, HTML, CSS3, React, Redux, Node, Express, Sequelize, PostgreSQL, Fly.io(Server), Netlify(Deploy)",
     github: "https://github.com/lags2022/pokemonPI",
