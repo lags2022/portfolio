@@ -60,7 +60,7 @@ const Hero = () => {
         >
           <h2>Hi,</h2>
           <h2>I&apos;m Luis,</h2>
-          <h2>full stack web developer</h2>
+          <h2>fronted web developer</h2>
         </motion.div>
         <motion.p
           variants={variantsViewChildrenLi2}
