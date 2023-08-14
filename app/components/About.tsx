@@ -46,7 +46,7 @@ const About = () => {
             <span className="font-bold text-blue-700 dark:text-blue-300">
               Luis Guzman.{" "}
             </span>
-            I&apos;m fronted web developer in Peru.{" "}
+            I&apos;m Full Stack Developer. I&apos;m from Peru.
           </motion.p>
           <motion.p
             variants={variantsViewChildrenLi2}
