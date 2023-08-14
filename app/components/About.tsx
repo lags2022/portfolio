@@ -26,11 +26,11 @@ const About = () => {
         >
           <Image
             className="rounded-2xl my-6 drop-shadow-xl m-auto"
-            src="/images/profile/developer-pic-2.webp"
+            src="/images/foto.webp"
             width={200}
             height={250}
             alt="Biography"
-            loading="lazy"
+            quality={100}
           />
         </motion.div>
         <motion.div
