@@ -26,7 +26,7 @@ const About = () => {
         >
           <Image
             className="rounded-2xl my-6 drop-shadow-xl m-auto"
-            src="/images/foto.webp"
+            src="/images/foto_portfolio.webp"
             width={200}
             height={250}
             alt="Biography"

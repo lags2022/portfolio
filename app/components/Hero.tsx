@@ -17,7 +17,7 @@ type nameSvg = "github" | "linkedin" | "facebook" | "email";
 const RenderSvgs = ({ name }: { name: nameSvg }) => {
   const social = {
     github: "https://github.com/lags2022",
-    linkedin: "https://www.linkedin.com/in/luisguzmandev",
+    linkedin: "https://www.linkedin.com/in/devluisgs/",
     facebook:
       "https://www.facebook.com/profile.php?id=100074966380787&mibextid=ZbWKwL",
     email: "mailto:lguzman.58erb@outlook.com",
@@ -78,14 +78,16 @@ const Hero = () => {
           whileInView="even"
           className="flex gap-3 md:gap-4 items-center justify-start"
         >
-          <motion.button
-            className="flex border-none rounded-lg w-fit px-2 py-2 md:py-3 md:px-4 bg-dark text-light items-center justify-center gap-1 dark:text-dark dark:bg-light dark:hover:text-white  hover:bg-blue-700 hover:dark:bg-blue-700"
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <p className="text-xs md:text-sm font-semibold">Resume CV</p>
-            <HiOutlineExternalLink className="text-base md:text-xl" />
-          </motion.button>
+          <a href="https://drive.google.com/file/d/1gK13BnD7LfI7xM8BTGnafow36wb2Tcto/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              className="flex border-none rounded-lg w-fit px-2 py-2 md:py-3 md:px-4 bg-dark text-light items-center justify-center gap-1 dark:text-dark dark:bg-light dark:hover:text-white  hover:bg-blue-700 hover:dark:bg-blue-700"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <p className="text-xs md:text-sm font-semibold">Resume CV</p>
+              <HiOutlineExternalLink className="text-base md:text-xl" />
+            </motion.button>
+          </a>
           {/* <div className="flex items-center px-2 gap-x-4"> */}
           <RenderSvgs name="github" />
           <RenderSvgs name="linkedin" />
