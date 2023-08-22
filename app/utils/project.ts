@@ -65,21 +65,6 @@ export const projects: ProjectsProps[] = [
   },
   {
     id: 5,
-    title: "Portfolio App",
-    description: "Project Portfolio, you are on the website 😊!",
-    tecnologies:
-      "TypeScript, JavaScript, HTML, CSS3, React, NextJS, TailwindCSS, Framer Motion, Vercel(Deploy)",
-    github: "https://github.com/lags2022/portfolio",
-    link: "https://portfolio-lags2022.vercel.app",
-    gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691166231/portfolio_izderr.gif",
-    images: [
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_1_w3ja4m.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_2_wq6aq9.webp",
-      "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691167139/portfolio_3_vzacvq.webp",
-    ],
-  },
-  {
-    id: 6,
     title: "Rick and Morty App",
     description:
       "Search, filter and show characters. Save your favorite characters and store that information in a database.",

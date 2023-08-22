@@ -73,6 +73,31 @@ export const showView = {
   },
 };
 
+export const variantsSkillsParents = {
+  odd: {
+    opacity: 0,
+  },
+  even: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const variantsSkillsChildrens = {
+  odd: {
+    opacity: 0,
+    scale: 0,
+  },
+  even: {
+    opacity: 1,
+    scale: 1,
+  },
+};
+
 export const variantsViewChildrenUl = {
   odd: {
     opacity: 0,

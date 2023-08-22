@@ -34,17 +34,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md backdrop-saturate-200 z-20 dark:bg-dark dark:backdrop-blur-3xl">
+    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md z-20 dark:bg-dark dark:backdrop-blur-3xl">
       <motion.div
-        className="bg-dark dark:bg-light fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
+        className="bg-dark dark:bg-darkBlue fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
-            <FaLaptopCode className="text-blue-600 dark:text-light text-2xl sm:text-3xl" />
+            <FaLaptopCode className="text-blue-500 dark:text-darkBlue text-2xl sm:text-3xl" />
           </motion.div>
-          <h3 className="px-2 text-blue-700 dark:text-light font-bold text-lg sm:text-2xl">
+          <h3 className="px-2 text-blue-500 dark:text-darkBlue font-bold text-lg sm:text-2xl">
             Lgdev
           </h3>
         </Link>
