@@ -48,7 +48,7 @@ const NavBar = ({
             onMouseLeave={handleMouseLeave}
             key={label}
           >
-            <Link href={route} onClick={onClose}>
+            <Link href={route} onClick={onClose} scroll={false}>
               {label}
             </Link>
           </li>
@@ -58,7 +58,7 @@ const NavBar = ({
         <Sunny />
         <button
           data-mode={mode}
-          className="w-8 h-5 px-1 bg-light dark:bg-dark sm:bg-dark sm:dark:bg-light  flex items-center justify-start data-[mode=dark]:justify-end rounded-lg p-0"
+          className="w-8 h-5 px-1 bg-lightblue dark:bg-darkblue sm:bg-lightblue sm:dark:bg-darkblue  flex items-center justify-start data-[mode=dark]:justify-end rounded-lg p-0"
           onClick={() =>
             mode === "light" ? setMode("dark") : setMode("light")
           }

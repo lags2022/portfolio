@@ -14,10 +14,10 @@ const About = () => {
       id="about"
       className="w-full m-auto grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center overflow-hidden"
     >
-      <div className="pt-10 xs:pt-24 h-full flex flex-col gap-4 items-start justify-start font-medium">
+      <div className="mt-[90px] h-full flex flex-col gap-4 items-start justify-start font-medium [&>p]:text-sm md:[&>p]:text-base dark:text-light">
         <p>
           My name is{" "}
-          <span className="font-bold text-darkBlue">Luis Guzman. </span>
+          <span className="font-bold text-darkblue">Luis Guzman. </span>
           I&apos;m Full Stack Developer. I&apos;m from Peru.
         </p>
         <p>I&apos;m passionate about movies, technology and the programming.</p>

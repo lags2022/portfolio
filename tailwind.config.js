@@ -11,13 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        darkblue: "#479aff",
         light: "#f5f5f5",
-        lightblue: "#3178c6",
-        darkhover:"#2f538e",
-        primary: "#B63E96",
-        primaryDark: "#58E6D9",
+        lightblue: "#2C74B3",
+        lighthover: "#205295",
+        dark: "#1b1b1b",
+        darkblue: "#4282ba",
+        darkhover: "#205295",
       },
       screens: {
         xs: "475px",

@@ -1,83 +1,52 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ProjectsProps } from "../../types";
-import { motion, AnimatePresence } from "framer-motion";
-import Modal from "./Modal";
-import { variantsViewChildrenLi2 } from "../utils/variantsModal";
-import clsx from "clsx";
+import Github from "./Svgs/Github";
+import ExternalLink from "./Svgs/ExternalLink";
 
-const Detail = ({ title, gif, images, ...props }: ProjectsProps) => {
-  const [modal, setModal] = useState(false);
-  const [showGif, setShowGif] = useState(false);
-  const onClose = () => {
-    setModal(false);
-    document.body.classList.remove("open-modal");
-  };
-  const onOpen = () => {
-    setModal(true);
-    document.body.classList.add("open-modal");
-  };
-
+const Detail = ({ id, title, gif, images, ...props }: ProjectsProps) => {
   return (
-    <motion.li
-      variants={variantsViewChildrenLi2}
-      initial="odd"
-      whileInView="even"
-      className="sli lg:h-[250px] lg:w-[350px] h-auto w-auto"
-    >
-      <motion.button
-        className="relative flex flex-col border-none items-center justify-center w-full h-full rounded-3xl shadow-2xl"
-        whileHover={{ scale: 1.05 }}
-        onClick={onOpen}
-      >
-        <Image
-          className="hidden-image h-full w-full cover border-none rounded-3xl z-10"
-          src={images[0]}
-          alt={title}
-          width={300}
-          height={200}
-          loading="lazy"
-        />
-        <Image
-          className={clsx(
-            "absolute top-0 left-0 h-full w-full cover border-none rounded-3xl md:hover:blur-[2px] z-0",
-            showGif ? "hidden" : "block"
-          )}
-          src={images[0]}
-          alt={title}
-          width={300}
-          height={200}
-          loading="lazy"
-        />
-        <Image
-          className={clsx(
-            "hidden-display h-full w-full cover border-none rounded-3xl md:hover:blur-[2px] z-0"
-          )}
-          src={gif}
-          alt={title}
-          width={300}
-          height={200}
-          loading="lazy"
-          onLoad={() => setShowGif(true)}
-        />
-        <div className="stitle">
-          <h5>{title}</h5>
-        </div>
-      </motion.button>
-      <AnimatePresence initial={false} onExitComplete={() => null} mode="wait">
-        {modal && (
-          <Modal
-            title={title}
-            gif={gif}
-            images={images}
-            onClose={onClose}
-            {...props}
+    <li id={`card_${id}`} className="card">
+      <div className="card__detail card__content bg-light dark:bg-darkblue dark:shadow-none">
+        <h6 className="text-base sm:text-lg font-bold text-center">{title}</h6>
+        <div className="flex flex-col sm:flex-row justify-start items-start gap-6">
+          <Image
+            className="w-[200px] h-[150px] md:w-[300px] md:h-[200px] rounded-xl m-auto imagedetail"
+            src={gif}
+            alt={title}
+            height={300}
+            width={200}
           />
-        )}
-      </AnimatePresence>
-    </motion.li>
+          <div className="flex flex-col gap-4 max-w-md">
+            <p className="font-medium text-sm md:text-base">
+              {props.description}
+            </p>
+            <p className="text-sm md:text-base font-semibold text-light">
+              {props.tecnologies}
+            </p>
+            <div className="flex m-auto sm:m-0 gap-4">
+              <a
+                href={props.github}
+                className="h-8 w-8 group"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Github/>
+              </a>
+              <a
+                href={props.link}
+                className="h-8 w-8 group"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <ExternalLink />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
   );
 };
 

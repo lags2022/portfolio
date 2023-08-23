@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -52,7 +58,7 @@ li {
   font-weight: bold;
 }
 
-.stitle > h5 {
+.stitle>h5 {
   padding: 2px 6px;
   border-radius: 2px;
   background-color: white;
@@ -77,7 +83,7 @@ li {
     background-color: none;
   }
 
-  .stitle > h5 {
+  .stitle>h5 {
     font-size: medium;
   }
 }
@@ -106,10 +112,131 @@ li {
   @apply block rounded-md w-full border-0 py-1.5 px-2 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-500 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6;
 }
 
-.herosvg{
-  @apply h-8 w-8 md:h-9 md:w-9 flex items-center justify-center 
+.herosvg {
+  @apply h-9 w-9 md:h-10 md:w-10 flex items-center justify-center
 }
 
-.svgpath{
-  @apply fill-lightblue dark:group-hover:fill-darkhover
+.svgpath {
+  @apply fill-lightblue group-hover:fill-lighthover group-hover:dark:fill-darkhover transition-all duration-500
+}
+
+.svgpath2 {
+  @apply fill-light
+}
+
+.linkbutton{
+  @apply flex px-8 py-2 border-none rounded-full w-fit bg-lightblue text-light items-center justify-center gap-1 hover:bg-lighthover hover:dark:bg-darkhover
+  transition-all duration-500
+}
+
+
+/* scroll-animate */
+:root {
+  --card-top-offset: 1em;
+  --card-height: 240px;
+  --card-margin: 150px;
+}
+
+@media screen and (max-width:640px) {
+  :root{
+    --card-height: 290px;
+  }
+}
+
+#cards {
+  --numcards: 5;
+  view-timeline-name: --cards-element-scrolls-in-body;
+  /* margin-top: 20px; */
+  list-style-type: none;
+  padding-inline-start: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--numcards), var(--card-height));
+  gap: var(--card-margin);
+  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+  margin-bottom: 100px;
+  /* margin-bottom: 75px; */
+}
+
+#card_1 {
+  --index: 1
+}
+
+#card_2 {
+  --index: 2
+}
+
+#card_3 {
+  --index: 3
+}
+
+#card_4 {
+  --index: 4
+}
+
+#card_5 {
+  --index: 5
+}
+
+
+.card {
+  position: sticky;
+  top: 50px;
+  padding-top: calc(var(--index) * var(--card-top-offset));
+  --index0: calc(var(--index) - 1);
+  /* 0-based index */
+  --reverse-index: calc(var(--numcards) - var(--index0));
+  /* reverse index */
+  --reverse-index0: calc(var(--reverse-index) - 1);
+  /* 0-based reverse index */
+}
+
+
+.card__detail{
+  padding: 30px;
+  display: flex;
+  background-image: radial-gradient(circle at 74.18% -16.45%, #4fb0ff 0, #4382bc 50%, #33577d 100%);     
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  /* width: 750px;
+  height: 320px; */
+  margin: auto;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+-webkit-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+-moz-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+}
+
+.card__content {
+  --start-range: calc(var(--index0) / var(--numcards) * 100%);
+  --end-range: calc((var(--index)) / var(--numcards) * 100%);
+  animation: linear scalesc forwards;
+  animation-timeline: --cards-element-scrolls-in-body;
+  animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+
+.imagedetail{
+  box-shadow: 4px 4px 4px 0px rgba(49,120,198,0.6);
+-webkit-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+-moz-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+}
+
+
+@keyframes scalesc {
+  to {
+    transform:
+      scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+    left: 0px;
+  }
+}
+
+@media screen and (max-width:575px){
+  .card__detail{
+    padding: 20px
+  }
 }

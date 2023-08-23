@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { FaLaptopCode, FaBars } from "react-icons/fa";
 import { useRef, useState } from "react";
-import { AnimatePresence, motion, useScroll } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import NavBar from "./NavBar";
 import ModalNavBar from "./ModalNavBar";
 
 const Header: React.FC = () => {
   const [show, setshow] = useState(false);
-  const { scrollYProgress } = useScroll();
   const menu = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = (evt: React.MouseEvent<HTMLLIElement>) => {
@@ -34,17 +33,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 fixed top-0 w-screen bg-light/80 backdrop-blur-md z-20 dark:bg-dark dark:backdrop-blur-3xl">
-      <motion.div
-        className="bg-dark dark:bg-darkBlue fixed left-0 right-0 bottom-0 h-1 origin-[0%]"
-        style={{ scaleX: scrollYProgress }}
-      />
-      <div className="flex items-center justify-between w-[90vw] max-w-screen-2xl m-auto">
+    <header className="py-4 w-[90vw] xl:max-w-7xl m-auto">
+      <div className="relative flex items-center justify-between m-auto">
         <Link href="/" className="flex items-center">
           <motion.div whileHover={{ y: -2 }}>
-            <FaLaptopCode className="text-blue-500 dark:text-darkBlue text-2xl sm:text-3xl" />
+            <FaLaptopCode className="text-lightblue dark:text-darkblue text-2xl sm:text-3xl" />
           </motion.div>
-          <h3 className="px-2 text-blue-500 dark:text-darkBlue font-bold text-lg sm:text-2xl">
+          <h3 className="px-2 text-lightblue dark:text-darkblue font-bold text-lg sm:text-2xl">
             Lgdev
           </h3>
         </Link>
@@ -53,7 +48,7 @@ const Header: React.FC = () => {
             className="sm:hidden flex flex-col justify-center items-center w-8 h-8"
             onClick={() => setshow(!show)}
           >
-            <FaBars size={20} className="dark:text-light" />
+            <FaBars size={20} className="text-lightblue dark:text-lightblue" />
           </button>
           <AnimatePresence
             initial={false}
@@ -77,7 +72,8 @@ const Header: React.FC = () => {
       <div
         ref={menu}
         className={`
-            absolute bg-black/5 dark:bg-gray-500 backdrop-blur-lg rounded 
+            absolute
+            bg-lightblue/75 dark:bg-darkhover backdrop-blur-lg rounded 
             translate-x-[var(--left)] translate-y-[var(--top)]
             left-0 top-0
             w-[var(--width)] h-[var(--height)]

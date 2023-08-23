@@ -73,7 +73,7 @@ export const showView = {
   },
 };
 
-export const variantsSkillsParents = {
+export const variantsSkillsParent = {
   odd: {
     opacity: 0,
   },
@@ -87,7 +87,7 @@ export const variantsSkillsParents = {
   },
 };
 
-export const variantsSkillsChildrens = {
+export const variantsSkillsChildren = {
   odd: {
     opacity: 0,
     scale: 0,

@@ -17,48 +17,46 @@ import Tailwind from "./Svgs/Tailwind";
 import Typescript from "./Svgs/Typescript";
 import PostgreSQL from "./Svgs/PostgreSQL";
 import {
-  variantsSkillsChildrens,
-  variantsSkillsParents,
+  variantsSkillsChildren,
+  variantsSkillsParent,
 } from "../utils/variantsModal";
 
 const Skills = () => {
-  const skillsRender = {
-    JavaScript: <Javascript />,
-    TypeScript: <Typescript />,
-    React: <React />,
-    NodeJs: <Node />,
-    ReactNative: <ReactNative />,
-    TailwindCss: <Tailwind />,
-    NextJs: <Next />,
-    CSS3: <Css />,
-    HTML5: <Html />,
-    PostgreSQL: <PostgreSQL />,
-    Redux: <Redux />,
-    Graphql: <Graphql />,
-    Git: <Git />,
-    MongoDB: <MongoDB />,
-    Figma: <Figma />,
-  };
+  const skillsArray = [
+    { name: "JavaScript", component: <Javascript /> },
+    { name: "TypeScript", component: <Typescript /> },
+    { name: "React", component: <React /> },
+    { name: "NodeJs", component: <Node /> },
+    { name: "ReactNative", component: <ReactNative /> },
+    { name: "TailwindCss", component: <Tailwind /> },
+    { name: "NextJs", component: <Next /> },
+    { name: "CSS3", component: <Css /> },
+    { name: "HTML5", component: <Html /> },
+    { name: "PostgreSQL", component: <PostgreSQL /> },
+    { name: "Redux", component: <Redux /> },
+    { name: "Graphql", component: <Graphql /> },
+    { name: "Git", component: <Git /> },
+    { name: "MongoDB", component: <MongoDB /> },
+    { name: "Figma", component: <Figma /> },
+  ];
 
   return (
-    <div className="sm:pt-12 flex flex-col">
+    <div className="flex flex-col">
       <h2 className="font-bold text-center text-xl my-0 md:text-2xl dark:text-light">
         Skills
       </h2>
       <motion.ul
-        variants={variantsSkillsParents}
+        variants={variantsSkillsParent}
         initial="odd"
         animate="even"
-        className="dark:bg-dark py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-12 [&>li>svg]:h-12 sm:[&>li>svg]:w-16 sm:[&>li>svg]:h-16 [&>li>p]:font-bold [&>li>p]:text-xs sm:[&>li>p]:text-sm [&>li>p]:text-center [&>li>svg]:m-auto gap-6 [&>li>p]:mb-1 dark:[&>li>p]:text-light"
+        className="dark:bg-dark py-4 px-2 h-full flex flex-wrap items-center justify-center [&>li>svg]:w-12 [&>li>svg]:h-12 sm:[&>li>svg]:w-16 sm:[&>li>svg]:h-16 [&>li>svg]:m-auto gap-6 "
       >
-        {Object.entries(skillsRender).map((el) => (
-          <motion.li
-            key={el[0]}
-            whileHover={{ scale: 1.1 }}
-            variants={variantsSkillsChildrens}
-          >
-            <p>{el[0]}</p>
-            {el[1]}
+        {skillsArray.map(({ name, component }) => (
+          <motion.li key={name} variants={variantsSkillsChildren}>
+            <p className="text-sm text-center md:text-base font-bold mb-1 dark:text-light">
+              {name}
+            </p>
+            {component}
           </motion.li>
         ))}
       </motion.ul>
