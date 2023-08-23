@@ -1,5 +1,3 @@
-// import Script from "next/script";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
@@ -24,17 +22,7 @@ export default function RootLayout({
       <body className="bg-light dark:bg-dark">
         <Header />
         {children}
-        {/* <Footer /> */}
       </body>
-      {/* <Script id="theme-switcher" strategy="beforeInteractive">
-        {`
-          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-          } else {
-            document.documentElement.classList.remove('dark')
-          }
-          `}
-      </Script> */}
     </html>
   );
 }
