@@ -139,7 +139,7 @@ li {
 
 @media screen and (max-width:640px) {
   :root{
-    --card-height: 290px;
+    --card-height: 400px;
   }
 }
 
