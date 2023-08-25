@@ -1,12 +1,4 @@
-"use client";
-
-import Image from "next/image";
 import Skills from "./Skills";
-import {
-  variantsViewChildrenLi2,
-  variantsViewChildrenUl2,
-} from "../utils/variantsModal";
-import { motion } from "framer-motion";
 
 const About = () => {
   return (

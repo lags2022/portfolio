@@ -195,7 +195,8 @@ li {
 .card__detail{
   padding: 30px;
   display: flex;
-  background-image: radial-gradient(circle at 74.18% -16.45%, #4fb0ff 0, #4382bc 50%, #33577d 100%);     
+  background: rgb(46,127,166);
+background: linear-gradient(90deg, rgba(46,127,166,1) 0%, rgba(47,91,145,1) 35%, rgba(48,74,136,1) 100%);  
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;

@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useThemeSwitcher } from "@/app/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
-import clsx from "clsx";
 import Sunny from "./Svgs/Sunny";
 import Moon from "./Svgs/Moon";
 

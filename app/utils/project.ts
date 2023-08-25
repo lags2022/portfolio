@@ -34,8 +34,8 @@ export const projects: ProjectsProps[] = [
   },
   {
     id: 3,
-    title: "Amazon 2.0 App Android",
-    description: "Amazon clone movil Android App.",
+    title: "Amazon 2.0 App Movil",
+    description: "Amazon clone movil App.",
     tecnologies: "React Native with Expo, Redux Toolkit, Stripe, Firebase.",
     github: "https://github.com/lags2022/amazon-clone-reactnative",
     link: "https://appetize.io/app/izen7lxuos6fpd2grq75n6lxta?device=pixel4&osVersion=11.0&scale=75",

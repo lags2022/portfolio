@@ -1,10 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { HiOutlineExternalLink } from "react-icons/hi";
-
-// email: "mailto:lguzman.58erb@outlook.com",
-
 const Contact = () => {
   return (
     <div

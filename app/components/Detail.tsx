@@ -12,11 +12,12 @@ const Detail = ({ id, title, gif, images, ...props }: ProjectsProps) => {
         <h6 className="text-base sm:text-lg font-bold text-center">{title}</h6>
         <div className="flex flex-col sm:flex-row justify-start items-start gap-6">
           <Image
-            className="w-[200px] h-[150px] md:w-[300px] md:h-[200px] rounded-xl m-auto imagedetail"
-            src={gif}
+            className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] rounded-xl m-auto imagedetail"
+            src={`/images/${id}.webp`}
             alt={title}
-            height={300}
-            width={200}
+            width={4800}
+            height={3000}
+            quality={100}
           />
           <div className="flex flex-col gap-4 max-w-md">
             <p className="font-medium text-sm md:text-base">

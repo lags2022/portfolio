@@ -37,7 +37,7 @@ const Skills = () => {
     { name: "Graphql", component: <Graphql /> },
     { name: "Git", component: <Git /> },
     { name: "MongoDB", component: <MongoDB /> },
-    { name: "Figma", component: <Figma /> },
+    // { name: "Figma", component: <Figma /> },
   ];
 
   return (
