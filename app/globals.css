@@ -117,7 +117,7 @@ li {
 }
 
 .svgpath {
-  @apply fill-lightblue group-hover:fill-lighthover group-hover:dark:fill-darkhover transition-all duration-500
+  @apply fill-lightblue group-hover/hero:fill-lighthover group-hover/hero:dark:fill-darkhover transition-all duration-500
 }
 
 .svgpath2 {

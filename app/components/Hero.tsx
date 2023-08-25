@@ -39,7 +39,7 @@ const Hero = () => {
             href="https://github.com/lags2022"
             target="_blank"
             rel="noopener noreferrer"
-            className="herosvg group"
+            className="herosvg group/hero"
           >
             <Github />
           </a>
@@ -47,7 +47,7 @@ const Hero = () => {
             href="https://www.linkedin.com/in/devluisgs/"
             target="_blank"
             rel="noopener noreferrer"
-            className="herosvg group"
+            className="herosvg group/hero"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
               <g fill="none" fillRule="evenodd">
@@ -66,7 +66,7 @@ const Hero = () => {
             href="https://twitter.com/LuisGuz06559954"
             target="_blank"
             rel="noopener noreferrer"
-            className="herosvg group"
+            className="herosvg group/hero"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
