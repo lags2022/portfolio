@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useThemeSwitcher } from "@/app/hooks/useThemeSwitcher";
+import { useTheme } from "next-themes";
+// import { useThemeSwitcher } from "@/app/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import Sunny from "./Svgs/Sunny";
 import Moon from "./Svgs/Moon";
@@ -36,7 +37,9 @@ const NavBar = ({
   handleMouseLeave,
   onClose,
 }: NavBarProps) => {
-  const [mode, setMode] = useThemeSwitcher();
+  // const [mode, setMode] = useThemeSwitcher();
+  const { theme, setTheme } = useTheme();
+
   return (
     <>
       <ul className="sm:text-dark text-light sm:dark:text-light dark:text-dark flex flex-col sm:flex-row [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-semibold justify-center items-start">
@@ -52,14 +55,23 @@ const NavBar = ({
           </li>
         ))}
       </ul>
+      <div className="flex gap-3 flex-col"> 
+        <p>the current theme is: {theme}</p>
+        <button className="border" onClick={() => setTheme("light")}>
+          ligth
+        </button>
+        <button className="border" onClick={() => setTheme("dark")}>
+          dark
+        </button>
+      </div>
       <div className="flex items-center justify-center border-none mx-2 gap-1">
         <Sunny />
         <button
-          data-mode={mode}
+          // data-mode={mode}
           className="w-8 h-5 px-1 bg-lightblue dark:bg-darkblue sm:bg-lightblue sm:dark:bg-darkblue  flex items-center justify-start data-[mode=dark]:justify-end rounded-lg p-0"
-          onClick={() =>
-            mode === "light" ? setMode("dark") : setMode("light")
-          }
+          // onClick={() =>
+          //   mode === "light" ? setMode("dark") : setMode("light")
+          // }
         >
           <motion.div
             className="w-3 h-3 rounded-full bg-dark dark:bg-light sm:bg-light sm:dark:bg-dark"

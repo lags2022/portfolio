@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import { ThemeProvider } from "./provider/theme-provider";
 
 const mont = Montserrat({
   subsets: ["latin"],
@@ -20,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${mont.className}`}>
       <body className="bg-light dark:bg-dark">
-        <Header />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
