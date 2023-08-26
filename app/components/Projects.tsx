@@ -2,7 +2,7 @@
 
 import { projects } from "../utils/project";
 import Detail from "./Detail";
-// import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // import { searchString } from "../utils/searchString";
 
 const Projects = () => {
@@ -10,20 +10,20 @@ const Projects = () => {
 
   // const navigatorsCompatibles = ["Chrome", "Edge"];
 
-  // useEffect(() => {
-  //   if (navigator.userAgent.indexOf("Chrome") != -1) {
-  //     const chromeIndex = navigator.userAgent.indexOf("Chrome");
-  //     const versionStart = chromeIndex + 7; // Longitud de "Chrome/"
-  //     const versionEnd = navigator.userAgent.indexOf(" ", versionStart);
-  //     const chromeVersion = navigator.userAgent.substring(
-  //       versionStart,
-  //       versionEnd
-  //     );
-  //     console.log(Number(chromeVersion.substring(0, 3)));
-  //     if (Number(chromeVersion.substring(0, 3)) >= 115) setShow(true);
-  //   }
-  // }, []);
-  console.log(navigator.userAgent);
+  useEffect(() => {
+    if (navigator.userAgent) {
+      console.log(navigator.userAgent);
+      // const chromeIndex = navigator.userAgent.indexOf("Chrome");
+      // const versionStart = chromeIndex + 7; // Longitud de "Chrome/"
+      // const versionEnd = navigator.userAgent.indexOf(" ", versionStart);
+      // const chromeVersion = navigator.userAgent.substring(
+      //   versionStart,
+      //   versionEnd
+      // );
+      // console.log(Number(chromeVersion.substring(0, 3)));
+      // if (Number(chromeVersion.substring(0, 3)) >= 115) setShow(true);
+    }
+  }, []);
 
   return (
     <div id="projects" className="w-full flex flex-col gap-4">
