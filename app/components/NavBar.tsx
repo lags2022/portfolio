@@ -46,29 +46,8 @@ const NavBar = ({
           </li>
         ))}
       </ul>
-      <div className="flex items-center justify-center border-none mx-2 gap-1">
-        <div>
-          <ThemeSwitch />
-        </div>
-        {/* <Sunny />
-        <button
-          data-mode={mode}
-          className="w-8 h-5 px-1 bg-lightblue dark:bg-darkblue sm:bg-lightblue sm:dark:bg-darkblue  flex items-center justify-start data-[mode=dark]:justify-end rounded-lg p-0"
-          onClick={() =>
-            mode === "light" ? setMode("dark") : setMode("light")
-          }
-        >
-          <motion.div
-            className="w-3 h-3 rounded-full bg-dark dark:bg-light sm:bg-light sm:dark:bg-dark"
-            layout
-            transition={{
-              type: "spring",
-              stiffness: 700,
-              damping: 30,
-            }}
-          />
-        </button>
-        <Moon /> */}
+      <div className="flex items-center justify-center">
+        <ThemeSwitch />
       </div>
     </>
   );
