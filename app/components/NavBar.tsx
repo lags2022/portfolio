@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitch";
 
 const links = [
   {
@@ -30,7 +31,6 @@ const NavBar = ({
   handleMouseLeave,
   onClose,
 }: NavBarProps) => {
-
   return (
     <>
       <ul className="sm:text-dark text-light sm:dark:text-light dark:text-dark flex flex-col sm:flex-row [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-semibold justify-center items-start">
@@ -47,6 +47,9 @@ const NavBar = ({
         ))}
       </ul>
       <div className="flex items-center justify-center border-none mx-2 gap-1">
+        <div>
+          <ThemeSwitch />
+        </div>
         {/* <Sunny />
         <button
           data-mode={mode}
