@@ -3,12 +3,12 @@ import { ProjectsProps } from "../../types";
 export const projects: ProjectsProps[] = [
   {
     id: 1,
-    title: "Pokemon App",
+    title: "ReservaTuCampo App - NoCountry",
     description:
-      "Search, filter and show pokemons. View Transition Api. Cloudinary.",
-    tecnologies: "React, Redux, Express, Sequelize, PostgreSQL.",
-    github: "https://github.com/lags2022/pokemonPI",
-    link: "https://pokemonp.netlify.app/",
+      "Collaboratively developed a soccer field reservation system with user authentication, secure routes, payment integration, reservation confirmation emails, Sportcamps geolocation, and an intuitive, responsive design.",
+    tecnologies: "React, Express, Typescript, MongoDb, TailwindCSS, MercadoPago",
+    github: "https://github.com/No-Country/c14-39-ft-typescript-react",
+    link: "https://reservatucampo.vercel.app/",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107928/pokemon_ixqbhb.gif",
     images: [
       "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691024321/pokemon_2_nayy4h.webp",
@@ -22,7 +22,7 @@ export const projects: ProjectsProps[] = [
     description:
       "Online store similar to Amazon with payment gateway and database.",
     tecnologies:
-      "React, NextJS, Redux Toolkit,  TailwindCSS, Stripe, Firebase.",
+      "React, NextJS, Redux Toolkit, TailwindCSS, Stripe, Firebase.",
     github: "https://github.com/lags2022/amazon-clone",
     link: "https://amazon-clone-lags2022.vercel.app/",
     gif: "https://res.cloudinary.com/dvozbuwkx/image/upload/v1691107968/amazon_opfkhx.gif",

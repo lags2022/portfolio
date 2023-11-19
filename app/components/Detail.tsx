@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ProjectsProps } from "../../types";
 import Github from "./Svgs/Github";
 import ExternalLink from "./Svgs/ExternalLink";
-
 const Detail = ({ id, title, gif, images, ...props }: ProjectsProps) => {
   return (
     <li id={`card_${id}`} className="card">
@@ -13,17 +12,26 @@ const Detail = ({ id, title, gif, images, ...props }: ProjectsProps) => {
           {title}
         </h6>
         <div className="flex flex-col sm:flex-row justify-start items-start gap-6">
-          <div className="overflow-hidden rounded-xl group-hover:rounded-xl">
-            <Image
-              className="group-hover:scale-105 transition-all duration-700 w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] rounded-xl m-auto imagedetail"
-              src={`/images/${id}.webp`}
-              alt={title}
-              width={4800}
-              height={3000}
-              quality={100}
-            />
+          <div className="overflow-hidden w-full sm:w-auto rounded-xl group-hover:rounded-xl">
+            {id === 1 ? (
+              <iframe
+                className="w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] m-auto"
+                src="https://www.youtube.com/embed/Ibka5Rttp8s"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <Image
+                className="group-hover:scale-105 transition-all duration-700 w-[300px] h-[187.5px] md:w-[400px] md:h-[250px] rounded-xl m-auto imagedetail"
+                src={`/images/${id}.webp`}
+                alt={title}
+                width={4800}
+                height={3000}
+                quality={100}
+              />
+            )}
           </div>
-          <div className="flex flex-col gap-4 max-w-md">
+          <div className="flex flex-col gap-4 max-w-xs">
             <p className="font-medium text-sm md:text-base text-blue-400">
               {props.description}
             </p>
