@@ -1,3 +1,5 @@
+"use client";
+
 import Skills from "./Skills";
 
 const About = () => {
