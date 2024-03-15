@@ -74,6 +74,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -202,9 +203,8 @@ li {
   @apply fill-light
 }
 
-.linkbutton{
-  @apply flex px-8 py-2 border-none rounded-full w-fit bg-lightblue text-light items-center justify-center gap-1 hover:bg-lighthover hover:dark:bg-darkhover
-  transition-all duration-500
+.linkbutton {
+  @apply flex px-8 py-2 border-none rounded-full w-fit bg-lightblue text-light items-center justify-center gap-1 hover:bg-lighthover hover:dark:bg-darkhover transition-all duration-500
 }
 
 
@@ -216,7 +216,7 @@ li {
 }
 
 @media screen and (max-width:640px) {
-  :root{
+  :root {
     --card-height: 400px;
   }
 }
@@ -270,11 +270,11 @@ li {
 }
 
 
-.card__detail{
+.card__detail {
   padding: 30px;
   display: flex;
-  background: rgb(46,127,166);
-background: linear-gradient(90deg, rgba(46,127,166,1) 0%, rgba(47,91,145,1) 35%, rgba(48,74,136,1) 100%);  
+  background: rgb(46, 127, 166);
+  background: linear-gradient(90deg, rgba(46, 127, 166, 1) 0%, rgba(47, 91, 145, 1) 35%, rgba(48, 74, 136, 1) 100%);
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -284,9 +284,9 @@ background: linear-gradient(90deg, rgba(46,127,166,1) 0%, rgba(47,91,145,1) 35%,
   margin: auto;
   gap: 20px;
   border-radius: 20px;
-  box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
--webkit-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
--moz-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+  box-shadow: 4px 4px 12px 0px rgba(49, 120, 198, 0.6);
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(49, 120, 198, 0.6);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(49, 120, 198, 0.6);
 }
 
 .card__content {
@@ -299,10 +299,10 @@ background: linear-gradient(90deg, rgba(46,127,166,1) 0%, rgba(47,91,145,1) 35%,
   will-change: transform;
 }
 
-.imagedetail{
-  box-shadow: 4px 4px 4px 0px rgba(49,120,198,0.6);
--webkit-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
--moz-box-shadow: 4px 4px 12px 0px rgba(49,120,198,0.6);
+.imagedetail {
+  box-shadow: 4px 4px 4px 0px rgba(49, 120, 198, 0.6);
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(49, 120, 198, 0.6);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(49, 120, 198, 0.6);
 }
 
 
@@ -314,8 +314,8 @@ background: linear-gradient(90deg, rgba(46,127,166,1) 0%, rgba(47,91,145,1) 35%,
   }
 }
 
-@media screen and (max-width:575px){
-  .card__detail{
+@media screen and (max-width:575px) {
+  .card__detail {
     padding: 20px
   }
 }

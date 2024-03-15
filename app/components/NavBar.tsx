@@ -40,7 +40,7 @@ const NavBar = ({
             onMouseLeave={handleMouseLeave}
             key={label}
           >
-            <Link href={route} onClick={onClose} scroll={false}>
+            <Link href={route} onClick={onClose}>
               {label}
             </Link>
           </li>
